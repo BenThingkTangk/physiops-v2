@@ -1,0 +1,1655 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>PhysioPS × HumanOS — Deep Space Clinical Intelligence</title>
+<meta name="description" content="The autonomic intelligence platform. Voice-to-vagus AI, wearable PNS decoding, clinician-grade ANS reporting in 8 seconds. Built on HumanOS — the operating layer for autonomic medicine." />
+<meta name="theme-color" content="#03060a" />
+
+<meta property="og:title" content="PhysioPS × HumanOS — Deep Space Clinical Intelligence" />
+<meta property="og:description" content="The future of medicine is autonomic. Drop a .ans file. Get a clinician-grade report in 8 seconds." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,600,700,800&f[]=satoshi@400,500,700&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" />
+
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="marketing.css" />
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2303060a'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%2300e5ff' stroke-width='1.5'/%3E%3Cpath d='M5 16 Q9 11 13 16 T21 16 T29 16' fill='none' stroke='%2300e5ff' stroke-width='1.5'/%3E%3Cpath d='M5 16 Q9 21 13 16 T21 16 T29 16' fill='none' stroke='%23ff6b35' stroke-width='1.5' opacity='0.85'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<div class="telemetry-bg" aria-hidden="true"></div>
+
+<!-- ====================== TOP NAV ====================== -->
+<header class="topnav" role="banner">
+  <div class="brand-lockup" aria-label="PhysioPS by HumanOS">
+    <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+      <defs>
+        <radialGradient id="navorb" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.9"/>
+          <stop offset="60%" stop-color="#a78bfa" stop-opacity="0.4"/>
+          <stop offset="100%" stop-color="#ff6b35" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <circle cx="20" cy="20" r="18" fill="url(#navorb)" opacity="0.5"/>
+      <circle cx="20" cy="20" r="11" fill="none" stroke="#00e5ff" stroke-width="1.4"/>
+      <path d="M5 20 Q11 12 17 20 T29 20 T35 20" fill="none" stroke="#00e5ff" stroke-width="1.4"/>
+      <path d="M5 20 Q11 28 17 20 T29 20 T35 20" fill="none" stroke="#ff6b35" stroke-width="1.4" opacity="0.85"/>
+      <circle cx="20" cy="20" r="2.6" fill="#a78bfa"/>
+    </svg>
+    <div class="word">
+      <span class="a">PhysioPS × HumanOS</span>
+      <span class="b">ANS DIAGNOSTIC ENGINE</span>
+    </div>
+  </div>
+
+  <nav class="nav-strip" aria-label="Primary">
+    <a href="#technology">Technology</a>
+    <a href="#ans-reporting">ANS Reporting</a>
+    <a href="#humanos">HumanOS</a>
+    <a href="#research">Research</a>
+    <a href="#ecosystem">Ecosystem</a>
+  </nav>
+
+  <div class="topnav-meta">
+    <span class="pill"><span class="dot" aria-hidden="true"></span>System Nominal</span>
+    <span class="timestamp mono" id="now">— v2.0.0 / Nirmata Holdings</span>
+  </div>
+</header>
+
+<main class="shell" role="main">
+
+<!-- ====================== 1. HERO ====================== -->
+<section class="hero" id="hero" aria-labelledby="hero-title">
+  <div class="hero-orbit-bg" aria-hidden="true"></div>
+  <div class="helix-bg" aria-hidden="true">
+    <svg viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="helP" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#00e5ff" stop-opacity="0"/>
+          <stop offset="50%" stop-color="#00e5ff" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="helS" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#ff6b35" stop-opacity="0"/>
+          <stop offset="50%" stop-color="#ff6b35" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#ff6b35" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <g class="helix-anim">
+        <!-- Two intertwined sine strands -->
+        <path class="helix-strand-p" stroke="url(#helP)"
+          d="M300,-40 C220,40 380,80 300,160 C220,240 380,280 300,360 C220,440 380,480 300,560 C220,640 380,680 300,760 C220,840 380,880 300,960" />
+        <path class="helix-strand-s" stroke="url(#helS)"
+          d="M300,-40 C380,40 220,80 300,160 C380,240 220,280 300,360 C380,440 220,480 300,560 C380,640 220,680 300,760 C380,840 220,880 300,960" />
+        <!-- Rungs at intersection points -->
+        <g class="helix-rung">
+          <line x1="240" y1="0"   x2="360" y2="0" />
+          <line x1="240" y1="160" x2="360" y2="160" />
+          <line x1="240" y1="320" x2="360" y2="320" />
+          <line x1="240" y1="480" x2="360" y2="480" />
+          <line x1="240" y1="640" x2="360" y2="640" />
+          <line x1="240" y1="800" x2="360" y2="800" />
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow">Deep Space Clinical Intelligence</span>
+      <h1 id="hero-title" style="margin-top: var(--space-6);">
+        See the nervous system <span class="accent">before</span> the symptoms.
+      </h1>
+      <p class="lede">
+        PhysioPS × HumanOS is the autonomic intelligence platform — voice-to-vagus AI,
+        wearable PNS decoding, and a GenUI insight engine that turns raw nerve telemetry
+        into a clinician-grade report in <strong style="color:var(--color-brand-cyan)">8 seconds</strong>.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#dropzone">Run my .ANS report <span class="arrow">→</span></a>
+        <a class="btn btn-secondary" href="#research">See the science</a>
+        <a class="btn btn-ghost" href="https://humanos-ans-diagnostic.vercel.app" target="_blank" rel="noopener">Open live diagnostic</a>
+      </div>
+      <div class="hero-trust" aria-label="Platform credentials">
+        <div class="kpi"><span class="v mono"><span data-count="8000" data-suffix="+">8000+</span></span><span class="l">patients scanned</span></div>
+        <div class="kpi"><span class="v mono"><span data-count="50" data-suffix="+">50+</span></span><span class="l">conditions covered</span></div>
+        <div class="kpi"><span class="v mono"><span data-count="94" data-suffix="%">94%</span></span><span class="l">model accuracy</span></div>
+        <div class="kpi"><span class="v mono">510(k)</span><span class="l">FDA cleared</span></div>
+      </div>
+    </div>
+
+    <aside class="cockpit" aria-label="HumanOS core diagnostic visual">
+      <div class="cockpit-frame">
+        <div class="humanos-core">
+          <svg viewBox="-150 -150 300 300" aria-hidden="true">
+            <defs>
+              <radialGradient id="coreG" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.9"/>
+                <stop offset="60%" stop-color="#a78bfa" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="#ff6b35" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <g class="core-pulse">
+              <circle r="38" fill="url(#coreG)"/>
+              <circle r="14" fill="#00e5ff" opacity="0.7"/>
+              <circle r="6"  fill="#f0f4ff"/>
+            </g>
+            <g class="core-ring">
+              <circle r="60" fill="none" stroke="#00e5ff" stroke-width="0.6" opacity="0.42"/>
+              <circle r="86" fill="none" stroke="#a78bfa" stroke-width="0.6" opacity="0.32" stroke-dasharray="3 8"/>
+              <circle cx="86" cy="0" r="2.2" fill="#00e5ff" class="core-orbit-dot"/>
+              <circle cx="-86" cy="0" r="1.8" fill="#a78bfa" class="core-orbit-dot" style="animation-delay: 0.8s;"/>
+            </g>
+            <g class="core-ring rev">
+              <circle r="112" fill="none" stroke="#ff6b35" stroke-width="0.6" opacity="0.28" stroke-dasharray="2 6"/>
+              <circle cx="68" cy="0" r="1.6" fill="#ff6b35" class="core-orbit-dot" style="animation-delay: 0.4s;"/>
+            </g>
+            <g class="core-ring">
+              <circle r="128" fill="none" stroke="rgba(210,235,255,0.18)" stroke-width="0.4"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="cockpit-meta">
+        <div class="cell"><span class="k">P&amp;S RATIO</span><span class="v" id="hero-ratio">1.42</span></div>
+        <div class="cell"><span class="k">RFa</span><span class="v">2.31&nbsp;<span style="color:var(--color-text-muted)">bpm²</span></span></div>
+        <div class="cell"><span class="k">LFa</span><span class="v">3.27&nbsp;<span style="color:var(--color-text-muted)">bpm²</span></span></div>
+        <div class="cell"><span class="k">CONFIDENCE</span><span class="v" style="color: var(--color-status-cleared);">HIGH · 0.94</span></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+
+<!-- ====================== 2. TECHNOLOGY ====================== -->
+<section id="technology" aria-labelledby="tech-title">
+  <div class="section-head">
+    <span class="label-caps">02 — Technology</span>
+    <div>
+      <h2 id="tech-title">Three pillars. One nervous system.</h2>
+      <p class="section-text">
+        We treat the autonomic branches as first-class clinical signals — measured directly,
+        modeled at scale, and rendered in a generative interface that adapts to whoever's reading it.
+      </p>
+    </div>
+  </div>
+
+  <div class="positioning-grid">
+    <article class="pillar">
+      <div class="num">PILLAR · 01</div>
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#00e5ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: var(--space-5);">
+        <path d="M12 2v6"/><path d="M12 16v6"/><path d="M9 8a3 3 0 0 1 6 0v6a3 3 0 0 1-6 0Z"/>
+        <path d="M5 12c-1.5 0 -3 1 -3 3"/><path d="M19 12c1.5 0 3 1 3 3"/>
+      </svg>
+      <h3>Voice → Vagus AI</h3>
+      <p>A 30-second voice sample maps directly to vagal tone via a HumanOS-trained acoustic model. No wearable required for first-pass screening.</p>
+    </article>
+    <article class="pillar">
+      <div class="num">PILLAR · 02</div>
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#00e5ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: var(--space-5);">
+        <path d="M3 12h3l2 -6 4 12 2 -6h7"/><circle cx="20" cy="12" r="1.5" fill="#ff6b35" stroke="#ff6b35"/>
+      </svg>
+      <h3>Wearable PNS Decoding</h3>
+      <p>Polar H10, Wahoo TICKR, Garmin HRM-Pro stream beat-to-beat RR intervals over Web Bluetooth. We decompose into RFa, LFa, P/S ratio, HRV, and 14 more measurements.</p>
+    </article>
+    <article class="pillar">
+      <div class="num">PILLAR · 03</div>
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#00e5ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: var(--space-5);">
+        <rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/>
+        <circle cx="7" cy="13" r="1.2" fill="#00e5ff"/><path d="M11 13h7"/>
+      </svg>
+      <h3>GenUI Insight Engine</h3>
+      <p>The same data, rendered in two languages: a clinician-dense MPG dashboard and a patient-friendly NeuralOrb with plain-English insights. Generated, not templated.</p>
+    </article>
+  </div>
+</section>
+
+
+<!-- ====================== 3. CLINICAL IMPACT — 50+ CONDITIONS ====================== -->
+<section id="conditions" aria-labelledby="cond-title">
+  <div class="section-head">
+    <span class="label-caps">03 — Clinical Impact</span>
+    <div>
+      <h2 id="cond-title">One platform. Fifty conditions. One upstream signal.</h2>
+      <p class="section-text">
+        Every chronic disease that reaches our clinics is, at some level, a story told in autonomic dysregulation.
+        The PhysioPS engine reads that story directly.
+      </p>
+    </div>
+  </div>
+
+  <div class="conditions-grid" aria-label="Conditions covered">
+    <span class="condition">POTS</span>
+    <span class="condition">Dysautonomia</span>
+    <span class="condition">Long COVID</span>
+    <span class="condition">Vagal tone disorders</span>
+    <span class="condition">PTSD</span>
+    <span class="condition">Chronic fatigue</span>
+    <span class="condition">Fibromyalgia</span>
+    <span class="condition">CFS / ME</span>
+    <span class="condition">Anxiety disorders</span>
+    <span class="condition">Major depression</span>
+    <span class="condition">TBI recovery</span>
+    <span class="condition">Concussion</span>
+    <span class="condition">Migraine</span>
+    <span class="condition">Cluster headache</span>
+    <span class="condition">IBS</span>
+    <span class="condition">SIBO</span>
+    <span class="condition">Gastroparesis</span>
+    <span class="condition">GERD</span>
+    <span class="condition">Vasovagal syncope</span>
+    <span class="condition">Orthostatic hypotension</span>
+    <span class="condition">Inappropriate sinus tach</span>
+    <span class="condition">Atrial fibrillation</span>
+    <span class="condition">Hypertension</span>
+    <span class="condition">Diabetic neuropathy</span>
+    <span class="condition">Pre-diabetes</span>
+    <span class="condition">Metabolic syndrome</span>
+    <span class="condition">Sleep apnea</span>
+    <span class="condition">Insomnia</span>
+    <span class="condition">Restless leg</span>
+    <span class="condition">Parkinson's</span>
+    <span class="condition">Multiple sclerosis</span>
+    <span class="condition">Stroke recovery</span>
+    <span class="condition">Spinal cord injury</span>
+    <span class="condition">EDS / hypermobility</span>
+    <span class="condition">MCAS</span>
+    <span class="condition">Chronic Lyme</span>
+    <span class="condition">Endometriosis</span>
+    <span class="condition">PCOS</span>
+    <span class="condition">Menopause transition</span>
+    <span class="condition">Adrenal dysregulation</span>
+    <span class="condition">Hashimoto's</span>
+    <span class="condition">Burnout syndrome</span>
+    <span class="condition">Pediatric POTS</span>
+    <span class="condition">Sports overtraining</span>
+    <span class="condition">Pre-op risk</span>
+    <span class="condition">Post-surgical recovery</span>
+    <span class="condition">Cardiac rehab</span>
+    <span class="condition">Stress cardiomyopathy</span>
+    <span class="condition">Substance use recovery</span>
+    <span class="condition">Veteran combat stress</span>
+    <span class="condition">First-responder PTSD</span>
+    <span class="condition">Pediatric anxiety</span>
+  </div>
+  <p class="mono" style="margin-top: var(--space-8); font-size: 12px; color: var(--color-text-muted); letter-spacing: 0.06em;">
+    52 conditions and counting · validated against an 8,000-patient cohort · paired with treatment-response tracking
+  </p>
+</section>
+
+
+<!-- ====================== 4. ANS BODY MAP ====================== -->
+<section id="bodymap" aria-labelledby="bm-title">
+  <div class="section-head">
+    <span class="label-caps">04 — Anatomy of the Signal</span>
+    <div>
+      <h2 id="bm-title">Where the autonomic nervous system speaks.</h2>
+      <p class="section-text">
+        The vagus nerve isn't a metaphor. It's the longest cranial nerve, the parasympathetic
+        superhighway, and our primary diagnostic substrate. Sympathetic outflow runs the chain
+        on the other side. We measure both.
+      </p>
+    </div>
+  </div>
+
+  <div class="bodymap">
+    <div class="bodymap-figure">
+      <svg viewBox="0 0 320 480" aria-hidden="true">
+        <defs>
+          <linearGradient id="bodyG" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="rgba(0,229,255,0.12)"/>
+            <stop offset="100%" stop-color="rgba(167,139,250,0.05)"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Body silhouette -->
+        <path d="M160 28
+                 C 188 28 206 50 206 78
+                 C 206 100 196 116 192 124
+                 L 196 144
+                 C 220 152 244 168 248 192
+                 L 252 240
+                 L 232 244
+                 L 224 220
+                 L 218 264
+                 L 220 320
+                 L 220 380
+                 C 220 410 214 440 208 460
+                 L 188 462
+                 L 184 400
+                 L 176 354
+                 L 160 354
+                 L 144 354
+                 L 136 400
+                 L 132 462
+                 L 112 460
+                 C 106 440 100 410 100 380
+                 L 100 320
+                 L 102 264
+                 L 96  220
+                 L 88  244
+                 L 68  240
+                 L 72  192
+                 C 76  168 100 152 124 144
+                 L 128 124
+                 C 124 116 114 100 114 78
+                 C 114 50 132 28 160 28 Z"
+              fill="url(#bodyG)" stroke="rgba(210,235,255,0.18)" stroke-width="0.8"/>
+
+        <!-- Brainstem core -->
+        <g class="bm-pulse">
+          <circle cx="160" cy="78" r="10" fill="rgba(167,139,250,0.20)" stroke="#a78bfa" stroke-width="1.2"/>
+          <circle cx="160" cy="78" r="3.5" fill="#a78bfa"/>
+        </g>
+
+        <!-- Heart -->
+        <g class="bm-pulse" style="transform-origin: 160px 200px;">
+          <ellipse cx="160" cy="200" rx="14" ry="10" class="bm-organ" fill="rgba(0,229,255,0.10)"/>
+          <text x="160" y="204" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#a7b4c8" letter-spacing="1.5">♥</text>
+        </g>
+
+        <!-- Lungs -->
+        <ellipse cx="130" cy="180" rx="12" ry="22" class="bm-organ"/>
+        <ellipse cx="190" cy="180" rx="12" ry="22" class="bm-organ"/>
+
+        <!-- Gut -->
+        <ellipse cx="160" cy="270" rx="32" ry="22" class="bm-organ"/>
+
+        <!-- Vagus / parasym path: brainstem → heart → lungs → gut -->
+        <path class="bm-vagus"
+              d="M160 88 C 150 110 145 140 160 200 C 170 240 150 250 160 270 C 170 285 158 300 160 320" />
+        <path class="bm-vagus"
+              d="M160 88 C 175 105 178 140 175 175 C 170 200 195 200 190 200" style="animation-delay: -2s;" />
+
+        <!-- Sympathetic chain -->
+        <path class="bm-symp"
+              d="M140 100 L 132 140 L 128 180 L 124 220 L 120 260 L 118 310 L 122 360" />
+        <path class="bm-symp"
+              d="M180 100 L 188 140 L 192 180 L 196 220 L 200 260 L 202 310 L 198 360" style="animation-delay: -1.5s;"/>
+
+        <!-- Ganglia dots -->
+        <g fill="#ff6b35">
+          <circle cx="132" cy="140" r="2"/><circle cx="128" cy="180" r="2"/><circle cx="124" cy="220" r="2"/>
+          <circle cx="120" cy="260" r="2"/><circle cx="118" cy="310" r="2"/>
+          <circle cx="188" cy="140" r="2"/><circle cx="192" cy="180" r="2"/><circle cx="196" cy="220" r="2"/>
+          <circle cx="200" cy="260" r="2"/><circle cx="202" cy="310" r="2"/>
+        </g>
+
+        <!-- Annotations -->
+        <g font-family="JetBrains Mono" font-size="9" letter-spacing="1.2" fill="#a7b4c8">
+          <text x="180" y="78" text-anchor="start">BRAINSTEM</text>
+          <text x="220" y="200" text-anchor="start" fill="#00e5ff">VAGUS · CN X</text>
+          <text x="14" y="220" text-anchor="start" fill="#ff6b35">SYMPATHETIC CHAIN</text>
+          <text x="200" y="270" text-anchor="start">ENTERIC GUT</text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="bodymap-list">
+      <article class="bodymap-item p">
+        <span class="glyph">P</span>
+        <div>
+          <h4>Vagus · Cranial Nerve X</h4>
+          <p>Parasympathetic outflow to heart, lungs, gut. Measured via high-frequency HRV (RFa) and beat-to-beat respiratory sinus arrhythmia.</p>
+        </div>
+      </article>
+      <article class="bodymap-item s">
+        <span class="glyph">S</span>
+        <div>
+          <h4>Sympathetic Chain</h4>
+          <p>Bilateral ganglia from C7 to L2. Decoded via low-frequency power (LFa) and time-domain RMSSD inversion against baseline.</p>
+        </div>
+      </article>
+      <article class="bodymap-item h">
+        <span class="glyph">H</span>
+        <div>
+          <h4>Composite HRV</h4>
+          <p>Violet line you'll see throughout the platform. The brain-body conversation, integrated into a single longitudinal signal.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================== 5. LIVE SIMULATION ====================== -->
+<section id="simulation" aria-labelledby="sim-title">
+  <div class="section-head">
+    <span class="label-caps">05 — Live Simulation</span>
+    <div>
+      <h2 id="sim-title">A patient acquisition, in motion.</h2>
+      <p class="section-text">
+        Cyan parasympathetic. Ember sympathetic. Violet composite HRV. The same waveform our
+        clinicians read in production — drawn from a synthetic but physiologically faithful
+        acquisition.
+      </p>
+    </div>
+  </div>
+
+  <div class="wave-shell" aria-label="Live P and S dual-branch waveform demo">
+    <div class="wave-head">
+      <div class="wave-legend">
+        <span class="label-stack"><span class="swatch-line parasym"></span><span class="label-caps" style="color:var(--color-parasym);">PARASYM · RFa</span></span>
+        <span class="label-stack"><span class="swatch-line sympathetic"></span><span class="label-caps" style="color:var(--color-sympathetic);">SYMPATH · LFa</span></span>
+        <span class="label-stack"><span class="swatch-line hrv"></span><span class="label-caps" style="color:var(--color-hrv);">HRV · COMPOSITE</span></span>
+      </div>
+      <div class="wave-tabs" role="tablist" aria-label="Acquisition phase">
+        <button type="button" aria-pressed="true"  data-phase="rest">REST</button>
+        <button type="button" aria-pressed="false" data-phase="breathe">BREATHE</button>
+        <button type="button" aria-pressed="false" data-phase="stand">STAND</button>
+      </div>
+    </div>
+    <div class="wave-canvas-wrap">
+      <canvas id="wave-canvas" aria-label="Animated dual-branch P and S waveform"></canvas>
+      <div class="wave-grid-overlay" aria-hidden="true"></div>
+    </div>
+    <div class="wave-readouts">
+      <div class="readout"><span class="k">P&amp;S RATIO</span><span class="v" data-readout="ratio">1.42</span></div>
+      <div class="readout"><span class="k">RFa · bpm²</span><span class="v" data-readout="rfa">2.31</span></div>
+      <div class="readout"><span class="k">LFa · bpm²</span><span class="v" data-readout="lfa">3.27</span></div>
+      <div class="readout"><span class="k">HRV · ms</span><span class="v" data-readout="hrv">47</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================== A. NEURAL ORB v2 (NEW) ====================== -->
+<section id="ans-reporting" aria-labelledby="orb-title">
+  <div class="section-head">
+    <span class="label-caps">06 — HumanOS · ANS Reporting AI</span>
+    <div>
+      <h2 id="orb-title">Meet NeuralOrb v2.</h2>
+      <p class="section-text">
+        A real-time, interactive, cinematic visualization of your autonomic nervous system.
+        Cyan parasympathetic strand. Ember sympathetic strand. Violet brainstem core.
+        Click any strand for clinical detail.
+      </p>
+    </div>
+  </div>
+
+  <div class="orb-grid">
+    <div class="orb-stage" aria-hidden="false" role="img" aria-label="NeuralOrb dual-helix nervous system visualization">
+      <svg viewBox="-150 -150 300 300">
+        <defs>
+          <radialGradient id="orbcoreG" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.95"/>
+            <stop offset="50%" stop-color="#00e5ff" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#ff6b35" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="orbcoreInner" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#f0f4ff" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.5"/>
+          </radialGradient>
+        </defs>
+
+        <!-- Outer glow -->
+        <circle r="130" fill="none" stroke="rgba(0,229,255,0.10)" stroke-width="0.5"/>
+        <circle r="118" fill="none" stroke="rgba(167,139,250,0.10)" stroke-width="0.5"/>
+
+        <!-- Strand P (parasympathetic) — full helix circle parametric path -->
+        <g class="orb-rotate">
+          <path class="orb-helix-p"
+            d="M 0 -110 C 70 -110 110 -50 110 0 C 110 60 70 110 0 110 C -70 110 -110 60 -110 0 C -110 -50 -70 -110 0 -110 Z"
+            stroke-dasharray="3 6" />
+          <!-- Particle along strand -->
+          <circle r="4" fill="#00e5ff" class="orb-particle">
+            <animateMotion dur="14s" repeatCount="indefinite"
+              path="M 0 -110 C 70 -110 110 -50 110 0 C 110 60 70 110 0 110 C -70 110 -110 60 -110 0 C -110 -50 -70 -110 0 -110 Z" />
+          </circle>
+        </g>
+
+        <!-- Strand S (sympathetic) — counter rotating -->
+        <g class="orb-rotate rev">
+          <path class="orb-helix-s"
+            d="M 0 -90 C -60 -90 -100 -40 -100 0 C -100 50 -60 90 0 90 C 60 90 100 50 100 0 C 100 -40 60 -90 0 -90 Z"
+            stroke-dasharray="2 5" />
+          <circle r="3.5" fill="#ff6b35" class="orb-particle" style="animation-delay: -2s;">
+            <animateMotion dur="16s" repeatCount="indefinite"
+              path="M 0 -90 C -60 -90 -100 -40 -100 0 C -100 50 -60 90 0 90 C 60 90 100 50 100 0 C 100 -40 60 -90 0 -90 Z" />
+          </circle>
+        </g>
+
+        <!-- Cross-rungs -->
+        <g class="orb-rotate" style="animation-duration: 60s;">
+          <line x1="-100" y1="0"  x2="100" y2="0"  stroke="rgba(167,139,250,0.18)" stroke-width="0.6"/>
+          <line x1="0"   y1="-100" x2="0"  y2="100" stroke="rgba(167,139,250,0.18)" stroke-width="0.6"/>
+          <line x1="-72" y1="-72" x2="72"  y2="72"  stroke="rgba(167,139,250,0.10)" stroke-width="0.6"/>
+          <line x1="-72" y1="72"  x2="72"  y2="-72" stroke="rgba(167,139,250,0.10)" stroke-width="0.6"/>
+        </g>
+
+        <!-- Core -->
+        <g class="orb-core">
+          <circle r="46" fill="url(#orbcoreG)"/>
+          <circle r="22" fill="url(#orbcoreInner)" opacity="0.8"/>
+          <circle r="8"  fill="#f0f4ff"/>
+        </g>
+
+        <!-- Floating data labels -->
+        <g font-family="JetBrains Mono" font-size="8" fill="#a7b4c8" letter-spacing="1.2">
+          <text x="115" y="-60">P · 0.62</text>
+          <text x="-145" y="60">S · 0.38</text>
+          <text x="-30"  y="-130">HRV · 47ms</text>
+        </g>
+      </svg>
+    </div>
+
+    <div>
+      <h3 style="font-size: clamp(1.5rem, 2.5vw, 2rem); letter-spacing: -0.025em;">
+        Real-time. Interactive. Cinematic.
+      </h3>
+      <p class="section-text" style="margin-top: var(--space-4);">
+        NeuralOrb v2 is a dual-helix 3D rendering of your nervous system, animated from your
+        live wearable telemetry or your most recent .ans acquisition. Each strand is a clinical
+        signal, not decoration — click and the orb resolves to a finding.
+      </p>
+
+      <div class="orb-strands">
+        <div class="strand-row p">
+          <span class="indicator"></span>
+          <div>
+            <div class="name">Parasympathetic strand</div>
+            <div class="desc">Vagal tone · RFa · resting HF power</div>
+          </div>
+          <span class="val">0.62</span>
+        </div>
+        <div class="strand-row s">
+          <span class="indicator"></span>
+          <div>
+            <div class="name">Sympathetic strand</div>
+            <div class="desc">LFa · pre-ejection period · skin conductance</div>
+          </div>
+          <span class="val">0.38</span>
+        </div>
+        <div class="strand-row h">
+          <span class="indicator"></span>
+          <div>
+            <div class="name">Brainstem core</div>
+            <div class="desc">Composite HRV · sleep coupling · circadian phase</div>
+          </div>
+          <span class="val">47<small style="color:var(--color-text-muted)"> ms</small></span>
+        </div>
+      </div>
+
+      <div class="orb-cta-row">
+        <a class="btn btn-primary" href="https://humanos-ans-diagnostic.vercel.app" target="_blank" rel="noopener">Open NeuralOrb live <span class="arrow">→</span></a>
+        <a class="btn btn-secondary" href="#dropzone">Load a .ans file</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================== B. .ans DROP-ZONE (NEW) ====================== -->
+<section id="dropzone" aria-labelledby="dz-title">
+  <div class="section-head">
+    <span class="label-caps">07 — Acquisition pipeline</span>
+    <div>
+      <h2 id="dz-title">Drop. Decode. Diagnose.</h2>
+      <p class="section-text">
+        From wearable telemetry to clinical-grade ANS report in eight seconds.
+        Drag a <code style="color:var(--color-brand-cyan); font-family:var(--font-mono);">.ans</code> file —
+        we parse the schema, run 18 measurements, score the autonomic state, and render the report.
+      </p>
+    </div>
+  </div>
+
+  <div class="dropzone-grid">
+    <div class="dropzone" data-dropzone aria-label="Drop a .ans file to generate a report">
+      <div class="file-icon" aria-hidden="true">
+        <svg viewBox="0 0 88 108" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="filebg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="rgba(0,229,255,0.18)"/>
+              <stop offset="100%" stop-color="rgba(167,139,250,0.10)"/>
+            </linearGradient>
+          </defs>
+          <path d="M8 4 H 60 L 84 28 V 100 a 4 4 0 0 1 -4 4 H 8 a 4 4 0 0 1 -4 -4 V 8 a 4 4 0 0 1 4 -4 Z"
+                fill="url(#filebg)" stroke="#00e5ff" stroke-width="1.4"/>
+          <path d="M60 4 V 24 a 4 4 0 0 0 4 4 H 84" fill="none" stroke="#00e5ff" stroke-width="1.4"/>
+
+          <text x="44" y="56" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#00e5ff" letter-spacing="2">.ans</text>
+
+          <!-- mini waveform -->
+          <path d="M14 78 Q22 70 30 78 T46 78 T62 78 T78 78"
+                stroke="#00e5ff" stroke-width="1.2" fill="none" opacity="0.9"/>
+          <path d="M14 86 Q22 92 30 86 T46 86 T62 86 T78 86"
+                stroke="#ff6b35" stroke-width="1.2" fill="none" opacity="0.85"/>
+        </svg>
+      </div>
+      <h3>Drop your .ans file here</h3>
+      <p>or click to browse from your acquisition device</p>
+      <div class="meta">
+        <span>Pare-Alex-Thu-Jul-11-2024.ans</span>
+        <span>·</span>
+        <span>652 KB</span>
+        <span>·</span>
+        <span>14:32 EST</span>
+      </div>
+      <span class="ps-pill ps-pill-processing"><span class="dot"></span>READY · 0.92s parse target</span>
+    </div>
+
+    <div class="pipeline-rail" aria-label="Report generation pipeline">
+      <article class="pipeline-step">
+        <span class="step-num">01</span>
+        <div class="step-body">
+          <div class="t">Parse .ans schema</div>
+          <div class="d">RR intervals, breath markers, posture flags · v2.1 schema</div>
+        </div>
+        <span class="timing">0.3s</span>
+      </article>
+      <article class="pipeline-step">
+        <span class="step-num">02</span>
+        <div class="step-body">
+          <div class="t">Spectral decomposition</div>
+          <div class="d">VLF · LF · HF · UHF bands · Welch + AR · 90s windows</div>
+        </div>
+        <span class="timing">1.4s</span>
+      </article>
+      <article class="pipeline-step">
+        <span class="step-num">03</span>
+        <div class="step-body">
+          <div class="t">Compute 18 measurements</div>
+          <div class="d">RFa · LFa · P/S ratio · RMSSD · pNN50 · SDNN · DC · AC · poincaré · sample entropy ...</div>
+        </div>
+        <span class="timing">0.9s</span>
+      </article>
+      <article class="pipeline-step">
+        <span class="step-num">04</span>
+        <div class="step-body">
+          <div class="t">HumanOS state inference</div>
+          <div class="d">Compare to 8,000-patient validation cohort · output severity + confidence</div>
+        </div>
+        <span class="timing">2.6s</span>
+      </article>
+      <article class="pipeline-step">
+        <span class="step-num">05</span>
+        <div class="step-body">
+          <div class="t">GenUI render</div>
+          <div class="d">MPG dashboard + NeuralOrb + plain-English insights · clinician + patient view</div>
+        </div>
+        <span class="timing">2.8s</span>
+      </article>
+      <article class="pipeline-step" style="border-color: rgba(0,229,255,0.32);">
+        <span class="step-num" style="background: rgba(34,197,94,0.14); color: #86efac; border-color: rgba(34,197,94,0.35);">✓</span>
+        <div class="step-body">
+          <div class="t">Report ready</div>
+          <div class="d">Total acquisition → diagnostic interpretation</div>
+        </div>
+        <span class="timing" style="color: var(--color-status-cleared); font-weight: 600;">8.0s</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================== C. GENUI INSIGHT CARDS (NEW) ====================== -->
+<section id="insights" aria-labelledby="ins-title">
+  <div class="section-head">
+    <span class="label-caps">08 — GenUI Insight Cards</span>
+    <div>
+      <h2 id="ins-title">Findings, in their own language.</h2>
+      <p class="section-text">
+        The GenUI engine emits insight cards — each one a self-contained finding with a
+        severity pill, a sparkline, the clinical evidence behind it, and the next clinical action.
+        Every card is generated for this patient, this acquisition, this moment.
+      </p>
+    </div>
+  </div>
+
+  <div class="insight-row">
+    <article class="ps-insight">
+      <div class="head">
+        <span class="ps-pill ps-pill-watch"><span class="dot"></span>WATCH</span>
+        <span class="label">04:12 · ACQUISITION</span>
+      </div>
+      <div class="finding">Vagal tone trending below 90-day envelope.</div>
+      <p class="clinical">RFa decreased to 1.84 bpm² across the resting baseline window — 21% below patient's seasonal baseline. Suggest guided-breathing acquisition before clinical conclusion.</p>
+      <div class="spark-row">
+        <svg viewBox="0 0 200 36" preserveAspectRatio="none" aria-hidden="true">
+          <defs><linearGradient id="spk1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(245,158,11,0.45)"/><stop offset="100%" stop-color="rgba(245,158,11,0)"/></linearGradient></defs>
+          <path d="M0 14 L25 12 L50 14 L75 18 L100 16 L125 22 L150 24 L175 28 L200 30 L200 36 L0 36 Z" fill="url(#spk1)"/>
+          <path d="M0 14 L25 12 L50 14 L75 18 L100 16 L125 22 L150 24 L175 28 L200 30" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+        </svg>
+        <span class="val">1.84<span class="delta">▼ 21%</span></span>
+      </div>
+      <div class="evidence">
+        <span class="chip">RFa</span>
+        <span class="chip">HF power</span>
+        <span class="chip">90-day baseline</span>
+        <span class="chip">N · 92</span>
+      </div>
+    </article>
+
+    <article class="ps-insight">
+      <div class="head">
+        <span class="ps-pill ps-pill-optimal"><span class="dot"></span>OPTIMAL</span>
+        <span class="label">07:48 · BREATHE</span>
+      </div>
+      <div class="finding">HRV recovery within reference range.</div>
+      <p class="clinical">RMSSD recovered to 51 ms within 28 seconds of guided 6-bpm breathing — patient demonstrates intact parasympathetic responsiveness. No further action.</p>
+      <div class="spark-row">
+        <svg viewBox="0 0 200 36" preserveAspectRatio="none" aria-hidden="true">
+          <defs><linearGradient id="spk2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(34,197,94,0.45)"/><stop offset="100%" stop-color="rgba(34,197,94,0)"/></linearGradient></defs>
+          <path d="M0 28 L25 26 L50 22 L75 18 L100 14 L125 10 L150 8 L175 6 L200 4 L200 36 L0 36 Z" fill="url(#spk2)"/>
+          <path d="M0 28 L25 26 L50 22 L75 18 L100 14 L125 10 L150 8 L175 6 L200 4" fill="none" stroke="#22c55e" stroke-width="1.5"/>
+        </svg>
+        <span class="val">51<span class="delta" style="color:#86efac;">▲ 18%</span></span>
+      </div>
+      <div class="evidence">
+        <span class="chip">RMSSD</span>
+        <span class="chip">recovery T</span>
+        <span class="chip">paced 6 bpm</span>
+        <span class="chip">conf 0.91</span>
+      </div>
+    </article>
+
+    <article class="ps-insight">
+      <div class="head">
+        <span class="ps-pill ps-pill-risk"><span class="dot"></span>RISK</span>
+        <span class="label">23:14 · OVERNIGHT</span>
+      </div>
+      <div class="finding">Sympathetic dominance during sleep.</div>
+      <p class="clinical">LFa stayed above 4.1 bpm² for 73 % of sleep duration — patient pattern consistent with prior episodes preceding migraine onset. Recommend HRV-biofeedback session before bed.</p>
+      <div class="spark-row">
+        <svg viewBox="0 0 200 36" preserveAspectRatio="none" aria-hidden="true">
+          <defs><linearGradient id="spk3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(255,107,53,0.45)"/><stop offset="100%" stop-color="rgba(255,107,53,0)"/></linearGradient></defs>
+          <path d="M0 18 L25 14 L50 8 L75 12 L100 6 L125 10 L150 4 L175 8 L200 2 L200 36 L0 36 Z" fill="url(#spk3)"/>
+          <path d="M0 18 L25 14 L50 8 L75 12 L100 6 L125 10 L150 4 L175 8 L200 2" fill="none" stroke="#ff6b35" stroke-width="1.5"/>
+        </svg>
+        <span class="val">4.32<span class="delta" style="color:#ffb198;">▲ 38%</span></span>
+      </div>
+      <div class="evidence">
+        <span class="chip">LFa</span>
+        <span class="chip">sleep window</span>
+        <span class="chip">migraine corr</span>
+        <span class="chip">conf 0.84</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<!-- ====================== D. CLINICIAN MPG DASHBOARD (NEW) ====================== -->
+<section id="mpg" aria-labelledby="mpg-title">
+  <div class="section-head">
+    <span class="label-caps">09 — Clinician MPG Dashboard</span>
+    <div>
+      <h2 id="mpg-title">Eighteen measurements. One operating surface.</h2>
+      <p class="section-text">
+        The Multi-Parameter Governance dashboard is what your physician sees: real ECG capture,
+        the 18 ANS measurements, ratios, scatter plots, trend panels, and longitudinal comparisons
+        against the patient's own baseline and the 8,000-patient cohort.
+      </p>
+    </div>
+  </div>
+
+  <div class="mpg-grid">
+    <article class="mpg-card">
+      <div class="lbl"><span>P&amp;S RATIO</span><span class="ps-pill ps-pill-watch"><span class="dot"></span>WATCH</span></div>
+      <div class="v">1.42</div>
+      <div class="sub">+0.18 vs 90-day baseline 1.18</div>
+      <svg class="fig" viewBox="0 0 240 80" preserveAspectRatio="none" aria-hidden="true">
+        <defs><linearGradient id="mpg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(245,158,11,0.45)"/><stop offset="100%" stop-color="rgba(245,158,11,0)"/></linearGradient></defs>
+        <path d="M0 60 L20 55 L40 58 L60 50 L80 52 L100 45 L120 47 L140 38 L160 42 L180 35 L200 30 L220 32 L240 28 L240 80 L0 80 Z" fill="url(#mpg1)"/>
+        <path d="M0 60 L20 55 L40 58 L60 50 L80 52 L100 45 L120 47 L140 38 L160 42 L180 35 L200 30 L220 32 L240 28" fill="none" stroke="#f59e0b" stroke-width="1.4"/>
+        <line x1="0" y1="48" x2="240" y2="48" stroke="#64748b" stroke-width="0.8" stroke-dasharray="2 4"/>
+      </svg>
+    </article>
+
+    <article class="mpg-card">
+      <div class="lbl"><span>SPECTRAL BANDS</span><span class="ps-pill ps-pill-processing"><span class="dot"></span>LIVE</span></div>
+      <svg class="fig" viewBox="0 0 240 80" preserveAspectRatio="none" aria-hidden="true">
+        <rect x="6"   y="48" width="48" height="28" fill="rgba(100,116,139,0.55)" rx="2"/>
+        <rect x="58"  y="30" width="58" height="46" fill="rgba(255,107,53,0.7)" rx="2"/>
+        <rect x="120" y="14" width="58" height="62" fill="rgba(0,229,255,0.7)" rx="2"/>
+        <rect x="182" y="40" width="52" height="36" fill="rgba(167,139,250,0.55)" rx="2"/>
+        <g font-family="JetBrains Mono" font-size="8" fill="#a7b4c8" letter-spacing="1">
+          <text x="6" y="44">VLF</text><text x="58" y="24">LF·S</text><text x="120" y="8">HF·P</text><text x="182" y="34">UHF</text>
+        </g>
+      </svg>
+      <div class="sub">Welch + AR estimator · 90 s windows</div>
+    </article>
+
+    <article class="mpg-card">
+      <div class="lbl"><span>AUTONOMIC SCATTER</span><span class="mono" style="font-size:10px; color:var(--color-text-muted);">N · 92 PATIENTS</span></div>
+      <svg class="fig" viewBox="0 0 240 80" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <g stroke="rgba(210,235,255,0.10)" stroke-width="0.8">
+          <line x1="120" y1="0" x2="120" y2="80"/><line x1="0" y1="40" x2="240" y2="40"/>
+        </g>
+        <g fill="#00e5ff" opacity="0.5">
+          <circle cx="48"  cy="22" r="2"/><circle cx="72" cy="34" r="2"/><circle cx="92" cy="28" r="2"/>
+          <circle cx="108" cy="36" r="2"/><circle cx="62" cy="46" r="2"/><circle cx="80" cy="20" r="2"/>
+        </g>
+        <g fill="#ff6b35" opacity="0.45">
+          <circle cx="160" cy="58" r="2"/><circle cx="184" cy="46" r="2"/><circle cx="200" cy="62" r="2"/>
+          <circle cx="170" cy="40" r="2"/><circle cx="210" cy="50" r="2"/><circle cx="148" cy="52" r="2"/>
+        </g>
+        <!-- Patient point with confidence ring -->
+        <circle cx="148" cy="32" r="10" fill="rgba(167,139,250,0.14)" stroke="rgba(167,139,250,0.55)" stroke-width="1"/>
+        <circle cx="148" cy="32" r="3.5" fill="#a78bfa" stroke="#03060a" stroke-width="1"/>
+      </svg>
+      <div class="sub">Patient · 04812-V plotted against cohort</div>
+    </article>
+
+    <article class="mpg-card">
+      <div class="lbl"><span>LONGITUDINAL TREND</span><span class="mono" style="font-size:10px; color:var(--color-text-muted);">90 D</span></div>
+      <svg class="fig" viewBox="0 0 240 80" preserveAspectRatio="none" aria-hidden="true">
+        <defs><linearGradient id="mpg4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(167,139,250,0.36)"/><stop offset="100%" stop-color="rgba(167,139,250,0)"/></linearGradient></defs>
+        <path d="M0 50 Q40 38 80 44 T160 36 T240 28 L240 60 Q160 48 80 56 T0 52 Z" fill="rgba(167,139,250,0.12)"/>
+        <path d="M0 54 Q40 46 80 48 T160 40 T240 34" fill="none" stroke="#a78bfa" stroke-width="1.5"/>
+        <line x1="0" y1="60" x2="240" y2="60" stroke="#64748b" stroke-width="0.8" stroke-dasharray="2 4"/>
+      </svg>
+      <div class="sub">HRV composite · trending up · conf 0.88</div>
+    </article>
+  </div>
+
+  <div class="mpg-grid" style="margin-top: var(--space-6);">
+    <article class="mpg-card" style="grid-column: span 2;">
+      <div class="lbl"><span>REAL ECG · LEAD II</span><span class="ps-pill ps-pill-cleared"><span class="dot"></span>SIGNAL CLEAN</span></div>
+      <svg class="fig" viewBox="0 0 480 80" preserveAspectRatio="none" aria-hidden="true" style="height:96px;">
+        <g stroke="rgba(210,235,255,0.05)" stroke-width="0.6">
+          <line x1="0" y1="20" x2="480" y2="20"/><line x1="0" y1="40" x2="480" y2="40"/><line x1="0" y1="60" x2="480" y2="60"/>
+          <line x1="80" y1="0" x2="80" y2="80"/><line x1="160" y1="0" x2="160" y2="80"/><line x1="240" y1="0" x2="240" y2="80"/><line x1="320" y1="0" x2="320" y2="80"/><line x1="400" y1="0" x2="400" y2="80"/>
+        </g>
+        <path d="M0 40 L20 40 L24 38 L28 42 L32 28 L36 56 L40 36 L44 40 L80 40 L84 40 L100 40 L104 38 L108 42 L112 28 L116 56 L120 36 L124 40 L160 40 L180 40 L184 38 L188 42 L192 28 L196 56 L200 36 L204 40 L240 40 L260 40 L264 38 L268 42 L272 28 L276 56 L280 36 L284 40 L320 40 L340 40 L344 38 L348 42 L352 28 L356 56 L360 36 L364 40 L400 40 L420 40 L424 38 L428 42 L432 28 L436 56 L440 36 L444 40 L480 40"
+              fill="none" stroke="#00e5ff" stroke-width="1.4" filter="url(#none)" />
+      </svg>
+      <div class="sub">256 Hz · clean · last 5.0 s window</div>
+    </article>
+
+    <article class="mpg-card" style="grid-column: span 2;">
+      <div class="lbl"><span>18 ANS MEASUREMENTS</span><span class="mono" style="font-size:10px; color:var(--color-text-muted);">FULL PANEL</span></div>
+      <div class="mpg-row">
+        <div class="row"><span>RFa · bpm²</span><span class="v" style="color:var(--color-parasym);">2.31</span></div>
+        <div class="row"><span>LFa · bpm²</span><span class="v" style="color:var(--color-sympathetic);">3.27</span></div>
+        <div class="row"><span>P&amp;S ratio</span><span class="v">1.42</span></div>
+        <div class="row"><span>RMSSD · ms</span><span class="v">47</span></div>
+        <div class="row"><span>SDNN · ms</span><span class="v">62</span></div>
+        <div class="row"><span>pNN50 · %</span><span class="v">18</span></div>
+        <div class="row"><span>Mean HR · bpm</span><span class="v">68</span></div>
+        <div class="row"><span>Sample entropy</span><span class="v">1.42</span></div>
+        <div class="row"><span>DC · ms</span><span class="v">7.8</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<!-- ====================== E. DUAL VIEW (NEW) ====================== -->
+<section id="dualview" aria-labelledby="dv-title">
+  <div class="section-head">
+    <span class="label-caps">10 — Dual View</span>
+    <div>
+      <h2 id="dv-title">Same data. Two languages.</h2>
+      <p class="section-text">
+        Clinical for them. Human for you. The clinician sees the data-dense MPG dashboard.
+        The patient sees a friendly NeuralOrb with plain-English insights and one clear next step.
+        Generated from the same .ans file, in real time.
+      </p>
+    </div>
+  </div>
+
+  <div class="dualview">
+    <article class="dualview-pane clinician" aria-label="Clinician view">
+      <span class="role-tag">Clinician</span>
+      <div style="margin-bottom: var(--space-5);">
+        <div class="mono" style="font-size: 11px; color: var(--color-text-muted); letter-spacing: 0.12em;">Patient · 04812-V · M · 47</div>
+        <h3 style="font-size: 22px; margin-top: var(--space-2);">Mild sympathetic dominance</h3>
+      </div>
+
+      <div class="dv-mock-readouts" style="margin-bottom: var(--space-4);">
+        <div><span class="k">P&amp;S</span><span class="v">1.42</span></div>
+        <div><span class="k">RFa</span><span class="v" style="color:var(--color-parasym);">2.31</span></div>
+        <div><span class="k">LFa</span><span class="v" style="color:var(--color-sympathetic);">3.27</span></div>
+        <div><span class="k">HRV</span><span class="v" style="color:var(--color-hrv);">47</span></div>
+        <div><span class="k">RMSSD</span><span class="v">47</span></div>
+        <div><span class="k">SDNN</span><span class="v">62</span></div>
+        <div><span class="k">CONF</span><span class="v" style="color:var(--color-status-cleared);">0.94</span></div>
+        <div><span class="k">N</span><span class="v">92</span></div>
+      </div>
+
+      <svg viewBox="0 0 480 100" preserveAspectRatio="none" style="width:100%; height: 90px;">
+        <defs>
+          <linearGradient id="dvP1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(0,229,255,0.4)"/><stop offset="100%" stop-color="rgba(0,229,255,0)"/></linearGradient>
+        </defs>
+        <path d="M0 60 Q30 40 60 50 T120 40 T180 50 T240 38 T300 48 T360 32 T420 42 T480 36 L480 100 L0 100 Z" fill="url(#dvP1)"/>
+        <path d="M0 60 Q30 40 60 50 T120 40 T180 50 T240 38 T300 48 T360 32 T420 42 T480 36" fill="none" stroke="#00e5ff" stroke-width="1.5"/>
+        <path d="M0 56 Q30 70 60 60 T120 72 T180 60 T240 70 T300 60 T360 76 T420 62 T480 68" fill="none" stroke="#ff6b35" stroke-width="1.4" opacity="0.85"/>
+      </svg>
+
+      <div style="margin-top: var(--space-4); display: grid; gap: var(--space-2);">
+        <span class="ps-pill ps-pill-watch"><span class="dot"></span>WATCH · ELEVATED P/S</span>
+        <span class="mono" style="font-size: 11px; color: var(--color-text-secondary);">Recommend tilt-table follow-up · review medication list</span>
+      </div>
+    </article>
+
+    <article class="dualview-pane patient" aria-label="Patient view">
+      <span class="role-tag">Patient</span>
+
+      <svg class="patient-orb" viewBox="-100 -100 200 200" aria-hidden="true">
+        <defs>
+          <radialGradient id="pOrb" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.85"/>
+            <stop offset="60%" stop-color="#00e5ff" stop-opacity="0.4"/>
+            <stop offset="100%" stop-color="#ff6b35" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <circle r="80" fill="none" stroke="rgba(167,139,250,0.18)" stroke-width="0.6"/>
+        <g class="orb-rotate">
+          <ellipse rx="70" ry="40" fill="none" stroke="#00e5ff" stroke-width="1.4" stroke-dasharray="3 6" opacity="0.7"/>
+        </g>
+        <g class="orb-rotate rev">
+          <ellipse rx="40" ry="70" fill="none" stroke="#ff6b35" stroke-width="1.4" stroke-dasharray="2 5" opacity="0.6"/>
+        </g>
+        <g class="orb-core">
+          <circle r="32" fill="url(#pOrb)"/>
+          <circle r="10" fill="#f0f4ff"/>
+        </g>
+      </svg>
+
+      <p class="patient-message">
+        Your nervous system is <span class="hi">a little revved up</span> today.<br/>
+        That's normal — let's bring it back down.
+      </p>
+
+      <div class="patient-tips">
+        <div class="tip"><span class="em">1</span><span>Try four minutes of slow breathing — six breaths per minute.</span></div>
+        <div class="tip"><span class="em">2</span><span>Drink water. Mild dehydration shows up here as sympathetic drift.</span></div>
+        <div class="tip"><span class="em">3</span><span>Re-scan tonight before bed. We'll show you the change.</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<!-- ====================== F. LIVE DEMO CTA (NEW) ====================== -->
+<section id="livedemo" aria-labelledby="ldemo-title">
+  <div class="demo-cta-card">
+    <span class="ps-pill ps-pill-cleared" style="margin-bottom: var(--space-4);"><span class="dot"></span>LIVE · NO SIGNUP</span>
+    <h3 id="ldemo-title">Try the live diagnostic now.</h3>
+    <p>Open the production HumanOS ANS diagnostic in your browser, or scan the QR-equivalent
+       on the mobile PWA. Either path renders a real NeuralOrb with the demo .ans file we ship.</p>
+    <div class="demo-cta-row">
+      <a class="btn btn-primary" href="https://humanos-ans-diagnostic.vercel.app" target="_blank" rel="noopener">
+        Open desktop diagnostic <span class="arrow">→</span>
+      </a>
+      <a class="btn btn-secondary" href="https://humanos-ans-mobile.vercel.app" target="_blank" rel="noopener">
+        Mobile PWA
+      </a>
+      <a class="btn btn-ghost" href="#dropzone">Re-read the pipeline</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================== 6. THE CHOICE ====================== -->
+<section id="choice" aria-labelledby="choice-title">
+  <div class="section-head">
+    <span class="label-caps">11 — The choice</span>
+    <div>
+      <h2 id="choice-title">Six months and twelve thousand dollars. Or eight seconds.</h2>
+      <p class="section-text">
+        The traditional autonomic workup is a fragmented expedition through cardiology,
+        neurology, gastroenterology, and sleep medicine. PhysioPS is a single, integrated reading.
+      </p>
+    </div>
+  </div>
+
+  <div class="choice-grid">
+    <article class="choice bad">
+      <span class="tag">Traditional cardiology workup</span>
+      <h3>The long way</h3>
+      <div class="price">$12,000+</div>
+      <div class="mono" style="font-size: 12px; color: var(--color-text-muted); letter-spacing: 0.08em; margin-bottom: var(--space-5);">Typical 6-month pathway · United States</div>
+      <ul>
+        <li>Cardiology consult · 3-week wait · $480</li>
+        <li>Holter monitor · 24-hour · $1,200</li>
+        <li>Tilt-table test · referral required · $2,400</li>
+        <li>Echocardiogram · separate visit · $1,800</li>
+        <li>Neurology consult · autonomic specialist · $720</li>
+        <li>QSART / sweat test · sub-specialist only · $2,200</li>
+        <li>Sleep study · home or in-lab · $2,800</li>
+        <li>GI workup if indicated · separate · $1,400+</li>
+        <li>Specialist coordination · usually missing</li>
+        <li>Patient-readable summary · rare</li>
+      </ul>
+    </article>
+
+    <article class="choice good">
+      <span class="tag">PhysioPS × HumanOS</span>
+      <h3>The integrated path</h3>
+      <div class="price">$0 — $249</div>
+      <div class="mono" style="font-size: 12px; color: var(--color-brand-cyan); letter-spacing: 0.08em; margin-bottom: var(--space-5);">10-minute acquisition · 8-second report</div>
+      <ul>
+        <li>Wearable HRM or built-in voice — already on patient</li>
+        <li>10-minute guided acquisition (rest · breathe · stand)</li>
+        <li>18 ANS measurements computed in 0.9 s</li>
+        <li>Spectral, time-domain and non-linear panels — included</li>
+        <li>Cross-organ inference: heart · lungs · gut · brainstem</li>
+        <li>Severity + confidence calibrated against 8,000-patient cohort</li>
+        <li>Clinician MPG dashboard + patient NeuralOrb · same data</li>
+        <li>Plain-English next step shipped with every report</li>
+        <li>Longitudinal trend captured automatically</li>
+        <li>Exportable physician PDF · FHIR-friendly payload</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+
+<!-- ====================== 7. THE DATA / KPIs ====================== -->
+<section id="data" aria-labelledby="data-title">
+  <div class="section-head">
+    <span class="label-caps">12 — The data</span>
+    <div>
+      <h2 id="data-title">The numbers underneath the platform.</h2>
+      <p class="section-text">
+        Every claim on this page is calibrated against an 8,000-patient validation cohort,
+        peer-reviewed methodology, and a 510(k)-cleared signal pipeline.
+      </p>
+    </div>
+  </div>
+
+  <div class="kpi-grid">
+    <article class="kpi-card">
+      <span class="v"><span data-count="8000" data-suffix="+">8000+</span></span>
+      <span class="l">Patients · validation cohort</span>
+      <p class="d">Multi-site, multi-condition. Powers the inference layer behind every report.</p>
+    </article>
+    <article class="kpi-card">
+      <span class="v"><span data-count="52">52</span></span>
+      <span class="l">Conditions covered</span>
+      <p class="d">From POTS to PTSD to pre-diabetic neuropathy. One signal, many phenotypes.</p>
+    </article>
+    <article class="kpi-card">
+      <span class="v"><span data-count="94" data-suffix="%">94%</span></span>
+      <span class="l">Model accuracy</span>
+      <p class="d">Held-out test accuracy on the autonomic state classifier · F1 0.91 · AUC 0.96.</p>
+    </article>
+    <article class="kpi-card">
+      <span class="v"><span data-count="18">18</span></span>
+      <span class="l">Measurements per scan</span>
+      <p class="d">RFa · LFa · P/S · RMSSD · SDNN · pNN50 · DC · AC · sample entropy and 9 more.</p>
+    </article>
+  </div>
+
+  <div class="kpi-grid" style="margin-top: var(--space-5);">
+    <article class="kpi-card">
+      <span class="v"><span data-count="8" data-suffix="s">8s</span></span>
+      <span class="l">.ans → report</span>
+      <p class="d">From schema parse to rendered MPG dashboard + NeuralOrb.</p>
+    </article>
+    <article class="kpi-card">
+      <span class="v"><span data-count="100" data-suffix="ms">100ms</span></span>
+      <span class="l">Edge inference latency</span>
+      <p class="d">Sub-100ms p95 globally · Akamai edge compute · regional residency.</p>
+    </article>
+    <article class="kpi-card">
+      <span class="v">510(k)</span>
+      <span class="l">FDA cleared signal pipeline</span>
+      <p class="d">Predicate-cleared PNS / SNS measurement engine · v2 submission underway.</p>
+    </article>
+    <article class="kpi-card">
+      <span class="v"><span data-count="2026">2026</span></span>
+      <span class="l">Brain Medicine paper</span>
+      <p class="d">Validation cohort + inference methodology · in press · open access.</p>
+    </article>
+  </div>
+</section>
+
+
+<!-- ====================== 8. HUMANOS ====================== -->
+<section id="humanos" aria-labelledby="hos-title">
+  <div class="section-head">
+    <span class="label-caps">13 — HumanOS</span>
+    <div>
+      <h2 id="hos-title">The operating layer for autonomic medicine.</h2>
+      <p class="section-text">
+        PhysioPS is the diagnostic. HumanOS is the layer underneath — a shared model, signal
+        graph, and inference runtime that powers every product in the Nirmata Holdings stack.
+      </p>
+    </div>
+  </div>
+
+  <div class="positioning-grid">
+    <article class="pillar">
+      <div class="num">LAYER · 01</div>
+      <h3>Signal graph</h3>
+      <p>One canonical schema for every nerve-derived measurement — voice, HR, HRV, EDA, ECG, breath. Every product reads the same graph.</p>
+    </article>
+    <article class="pillar">
+      <div class="num">LAYER · 02</div>
+      <h3>Inference runtime</h3>
+      <p>The model that turns signals into states. Trained on 8,000+ patients. Calibrated per condition. Shipped to the edge.</p>
+    </article>
+    <article class="pillar">
+      <div class="num">LAYER · 03</div>
+      <h3>GenUI surface</h3>
+      <p>The same finding rendered as a clinician dashboard, a patient orb, a wearable haptic, or a clinic-room display. One generator. Many surfaces.</p>
+    </article>
+  </div>
+
+  <figure class="positioning-quote">
+    <div class="mark-q" aria-hidden="true">“</div>
+    <blockquote>
+      Every condition has an autonomic signature. HumanOS is the layer that lets every product
+      in this company speak the same nervous-system language — clinically, longitudinally, and at scale.
+    </blockquote>
+    <cite>— Steve O'Leary · Founder, Nirmata Holdings</cite>
+  </figure>
+</section>
+
+
+<!-- ====================== 9. ROOT-CAUSE MEDICINE ====================== -->
+<section id="rootcause" aria-labelledby="rc-title">
+  <div class="section-head">
+    <span class="label-caps">14 — Root-cause medicine</span>
+    <div>
+      <h2 id="rc-title">A paradigm shift, drawn in a single line.</h2>
+      <p class="section-text">
+        Modern medicine treats symptoms downstream of the autonomic nervous system. PhysioPS
+        reads the upstream branch directly — the regulator, not the regulated.
+      </p>
+    </div>
+  </div>
+
+  <div class="ps-glass" style="padding: var(--space-10); display: grid; gap: var(--space-8);">
+    <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-6);">
+
+      <div>
+        <span class="label-caps" style="color:var(--color-text-muted);">DOWNSTREAM</span>
+        <p style="font-size: 18px; color: var(--color-text-secondary); margin-top: var(--space-3); line-height: 1.5;">
+          Hypertension. Migraine. Anxiety. Chronic fatigue. IBS. Insomnia. Each one a chapter
+          in a long book of symptoms — and each one a manifestation of the same autonomic
+          dysregulation upstream.
+        </p>
+      </div>
+
+      <div style="position: relative; height: 60px; display: flex; align-items: center;">
+        <svg viewBox="0 0 800 60" preserveAspectRatio="none" style="width:100%;height:100%;">
+          <defs>
+            <linearGradient id="rcArrow" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#ff6b35" stop-opacity="0.4"/>
+              <stop offset="50%" stop-color="#a78bfa" stop-opacity="0.7"/>
+              <stop offset="100%" stop-color="#00e5ff" stop-opacity="1"/>
+            </linearGradient>
+          </defs>
+          <line x1="20" y1="30" x2="780" y2="30" stroke="url(#rcArrow)" stroke-width="2"/>
+          <polygon points="780,30 768,24 768,36" fill="#00e5ff"/>
+          <g font-family="JetBrains Mono" font-size="10" letter-spacing="2" text-anchor="middle">
+            <text x="120" y="20" fill="#a7b4c8">SYMPTOMS</text>
+            <text x="400" y="20" fill="#a7b4c8">DOWNSTREAM</text>
+            <text x="680" y="20" fill="#00e5ff">AUTONOMIC ROOT</text>
+          </g>
+        </svg>
+      </div>
+
+      <div>
+        <span class="label-caps" style="color:var(--color-brand-cyan);">UPSTREAM</span>
+        <p style="font-size: 18px; color: var(--color-text-primary); margin-top: var(--space-3); line-height: 1.5;">
+          The autonomic nervous system regulates every involuntary function. When it drifts,
+          everything downstream drifts with it. Read the regulator and you read the system.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================== 10. RESEARCH ====================== -->
+<section id="research" aria-labelledby="rs-title">
+  <div class="section-head">
+    <span class="label-caps">15 — Breakthrough research</span>
+    <div>
+      <h2 id="rs-title">Peer-reviewed. Multi-site. Open access.</h2>
+      <p class="section-text">
+        Our 2026 Brain Medicine paper validates the HumanOS inference engine against an
+        8,000-patient multi-site cohort. The methodology, the cohort design, and the spectral
+        decomposition pipeline are all open to the field.
+      </p>
+    </div>
+  </div>
+
+  <div class="positioning-grid">
+    <article class="pillar">
+      <div class="num">PAPER · 2026</div>
+      <h3>Brain Medicine</h3>
+      <p>Validation of an autonomic state classifier across 8,000+ patients · F1 0.91 · AUC 0.96 · multi-site, multi-condition. Open access on publication.</p>
+    </article>
+    <article class="pillar">
+      <div class="num">COHORT · 8K</div>
+      <h3>Validation cohort</h3>
+      <p>Eight clinical sites · five conditions · paired with longitudinal outcomes. Cohort design and inclusion criteria published in supplemental.</p>
+    </article>
+    <article class="pillar">
+      <div class="num">PIPELINE · 510(K)</div>
+      <h3>FDA cleared</h3>
+      <p>Predicate-cleared signal pipeline · v2 submission underway with the 8,000-patient evidence package and HumanOS inference layer documentation.</p>
+    </article>
+  </div>
+</section>
+
+
+<!-- ====================== 11. INFRASTRUCTURE ====================== -->
+<section id="infra" aria-labelledby="infra-title">
+  <div class="section-head">
+    <span class="label-caps">16 — Infrastructure</span>
+    <div>
+      <h2 id="infra-title">Edge-rendered. Sub-100ms. Global.</h2>
+      <p class="section-text">
+        Akamai edge compute carries the inference runtime to the patient. The signal pipeline
+        runs at the edge node closest to acquisition — so the report is ready before the
+        clinician has finished walking back to the desk.
+      </p>
+    </div>
+  </div>
+
+  <div class="ps-glass" style="padding: var(--space-8); position: relative;">
+    <svg viewBox="0 0 800 220" preserveAspectRatio="xMidYMid meet" style="width:100%; height:auto;">
+      <defs>
+        <radialGradient id="globe" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="rgba(0,229,255,0.15)"/>
+          <stop offset="100%" stop-color="rgba(0,229,255,0)"/>
+        </radialGradient>
+      </defs>
+      <ellipse cx="400" cy="110" rx="380" ry="100" fill="url(#globe)"/>
+      <g stroke="rgba(210,235,255,0.10)" stroke-width="0.6" fill="none">
+        <ellipse cx="400" cy="110" rx="380" ry="100"/>
+        <ellipse cx="400" cy="110" rx="280" ry="80"/>
+        <ellipse cx="400" cy="110" rx="180" ry="60"/>
+        <line x1="20" y1="110" x2="780" y2="110"/>
+        <line x1="400" y1="10" x2="400" y2="210"/>
+      </g>
+      <!-- Edge nodes -->
+      <g>
+        <g><circle cx="160" cy="80" r="5" fill="#00e5ff"/><circle cx="160" cy="80" r="14" fill="none" stroke="#00e5ff" stroke-width="0.6" opacity="0.4"/></g>
+        <g><circle cx="320" cy="50" r="5" fill="#00e5ff"/><circle cx="320" cy="50" r="14" fill="none" stroke="#00e5ff" stroke-width="0.6" opacity="0.4"/></g>
+        <g><circle cx="500" cy="140" r="5" fill="#a78bfa"/><circle cx="500" cy="140" r="14" fill="none" stroke="#a78bfa" stroke-width="0.6" opacity="0.4"/></g>
+        <g><circle cx="640" cy="90" r="5" fill="#00e5ff"/><circle cx="640" cy="90" r="14" fill="none" stroke="#00e5ff" stroke-width="0.6" opacity="0.4"/></g>
+        <g><circle cx="240" cy="160" r="5" fill="#ff6b35"/><circle cx="240" cy="160" r="14" fill="none" stroke="#ff6b35" stroke-width="0.6" opacity="0.4"/></g>
+      </g>
+      <g stroke="#00e5ff" stroke-width="0.8" fill="none" opacity="0.45" stroke-dasharray="3 4">
+        <path d="M160 80 Q260 100 320 50"/>
+        <path d="M320 50 Q420 100 500 140"/>
+        <path d="M500 140 Q570 110 640 90"/>
+        <path d="M640 90 Q480 50 320 50"/>
+        <path d="M240 160 Q380 130 500 140"/>
+      </g>
+      <g font-family="JetBrains Mono" font-size="9" fill="#a7b4c8" letter-spacing="1">
+        <text x="160" y="68">SFO</text><text x="320" y="38">NYC</text>
+        <text x="500" y="160" fill="#a78bfa">FRA</text><text x="640" y="78">SIN</text>
+        <text x="240" y="180" fill="#ff6b35">SAO</text>
+      </g>
+    </svg>
+
+    <div class="kpi-grid" style="margin-top: var(--space-8);">
+      <div class="kpi-card"><span class="v">< 100 ms</span><span class="l">p95 inference</span></div>
+      <div class="kpi-card"><span class="v">240+</span><span class="l">edge POPs</span></div>
+      <div class="kpi-card"><span class="v">99.99%</span><span class="l">uptime SLO</span></div>
+      <div class="kpi-card"><span class="v">SOC 2 II</span><span class="l">data residency</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================== 12. WEARABLES ====================== -->
+<section id="wearable" aria-labelledby="wear-title">
+  <div class="section-head">
+    <span class="label-caps">17 — Wearable integration</span>
+    <div>
+      <h2 id="wear-title">The wearables you already trust. Decoded clinically.</h2>
+      <p class="section-text">
+        We don't ship hardware. We meet patients where they already are — Polar H10, Wahoo TICKR,
+        Garmin HRM-Pro — over Web Bluetooth, with no cloud round-trip during acquisition.
+      </p>
+    </div>
+  </div>
+
+  <div class="positioning-grid">
+    <article class="pillar">
+      <div class="num">DEVICE · 01</div>
+      <svg width="60" height="60" viewBox="0 0 60 60" style="margin-bottom: var(--space-4);">
+        <rect x="6" y="22" width="48" height="16" rx="3" fill="rgba(0,229,255,0.08)" stroke="#00e5ff" stroke-width="1.2"/>
+        <circle cx="20" cy="30" r="3" fill="#00e5ff"/>
+        <text x="30" y="34" font-family="JetBrains Mono" font-size="8" fill="#a7b4c8" letter-spacing="1">POLAR H10</text>
+      </svg>
+      <h3>Polar H10</h3>
+      <p>The reference-grade chest strap. 256 Hz ECG quality. Direct RR over BLE. Our default for clinical-grade acquisitions.</p>
+    </article>
+    <article class="pillar">
+      <div class="num">DEVICE · 02</div>
+      <svg width="60" height="60" viewBox="0 0 60 60" style="margin-bottom: var(--space-4);">
+        <rect x="6" y="22" width="48" height="16" rx="3" fill="rgba(255,107,53,0.08)" stroke="#ff6b35" stroke-width="1.2"/>
+        <circle cx="20" cy="30" r="3" fill="#ff6b35"/>
+        <text x="30" y="34" font-family="JetBrains Mono" font-size="7" fill="#a7b4c8" letter-spacing="1">WAHOO TICKR</text>
+      </svg>
+      <h3>Wahoo TICKR</h3>
+      <p>Athlete-grade beat-to-beat. We cross-validate against H10 in the same session for sport and rehab cohorts.</p>
+    </article>
+    <article class="pillar">
+      <div class="num">DEVICE · 03</div>
+      <svg width="60" height="60" viewBox="0 0 60 60" style="margin-bottom: var(--space-4);">
+        <rect x="6" y="22" width="48" height="16" rx="3" fill="rgba(167,139,250,0.08)" stroke="#a78bfa" stroke-width="1.2"/>
+        <circle cx="20" cy="30" r="3" fill="#a78bfa"/>
+        <text x="30" y="34" font-family="JetBrains Mono" font-size="6" fill="#a7b4c8" letter-spacing="1">GARMIN HRM-PRO</text>
+      </svg>
+      <h3>Garmin HRM-Pro</h3>
+      <p>Long-duration field acquisitions. Our default for veteran and first-responder studies in mobile contexts.</p>
+    </article>
+  </div>
+
+  <p class="mono" style="margin-top: var(--space-8); font-size: 12px; color: var(--color-text-muted); letter-spacing: 0.06em; text-align:center;">
+    Built on Web Bluetooth · zero install · pairs in &lt; 5 seconds · works in Chrome, Edge, Brave · iOS support via the PhysioPS PWA.
+  </p>
+</section>
+
+
+<!-- ====================== 13. ORIGIN STORY ====================== -->
+<section id="origin" aria-labelledby="origin-title">
+  <div class="section-head">
+    <span class="label-caps">18 — Origin</span>
+    <div>
+      <h2 id="origin-title">Steve O'Leary, and the catalyst event.</h2>
+      <p class="section-text">
+        The platform exists because a single patient — a Navy SEAL community member with
+        post-deployment dysautonomia — couldn't get a clean autonomic readout in any of three
+        academic medical centers. We built the readout.
+      </p>
+    </div>
+  </div>
+
+  <div class="ps-glass" style="padding: var(--space-10); display: grid; gap: var(--space-6); grid-template-columns: 1fr;">
+    <div style="display: grid; gap: var(--space-3);">
+      <span class="ps-pill ps-pill-cleared" style="width: max-content;"><span class="dot"></span>FOUNDER · 2019</span>
+      <h3 style="font-size: 1.65rem; letter-spacing: -0.02em;">"He was alive. The system couldn't see him."</h3>
+      <p style="color: var(--color-text-secondary); max-width: 64ch; line-height: 1.6;">
+        Steve O'Leary spent fifteen years building data infrastructure for biopharma. In 2019,
+        a friend in the SEAL community tried to get a vagal-tone reading and walked out of three
+        institutions with three different non-answers. PhysioPS started as a single-page tool
+        to aggregate the readings he could get. It became the platform when the same pattern
+        showed up in Long COVID, in PTSD, in cardiac rehab, and in pediatric POTS — five conditions,
+        one missing instrument.
+      </p>
+    </div>
+    <div class="kpi-grid">
+      <div class="kpi-card"><span class="v">2019</span><span class="l">First .ans schema</span></div>
+      <div class="kpi-card"><span class="v">2021</span><span class="l">VA pilot</span></div>
+      <div class="kpi-card"><span class="v">2024</span><span class="l">8K cohort</span></div>
+      <div class="kpi-card"><span class="v">2026</span><span class="l">Brain Medicine paper</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================== 14. VETERANS ====================== -->
+<section id="veterans" aria-labelledby="vet-title">
+  <div class="section-head">
+    <span class="label-caps">19 — Veterans</span>
+    <div>
+      <h2 id="vet-title">VA pilot. SEAL community. Vagal-tone restoration.</h2>
+      <p class="section-text">
+        PTSD shows up as autonomic dysregulation long before it shows up in the chart. Our
+        veteran pilot gives the patient — and the clinician — a longitudinal view of the
+        nervous system as it heals.
+      </p>
+    </div>
+  </div>
+
+  <div class="positioning-grid">
+    <article class="pillar">
+      <div class="num">PILOT · 01</div>
+      <h3>VA pilot</h3>
+      <p>Two-site VA pilot tracking PTSD and TBI veterans across 12-month vagal-tone restoration arcs. Outcomes paired with PCL-5 and PHQ-9.</p>
+    </article>
+    <article class="pillar">
+      <div class="num">PILOT · 02</div>
+      <h3>SEAL community</h3>
+      <p>Field acquisitions across deployment cycles. Pre-deployment baseline. Post-deployment delta. Reintegration recovery curve.</p>
+    </article>
+    <article class="pillar">
+      <div class="num">PILOT · 03</div>
+      <h3>First responders</h3>
+      <p>Fire, EMS, dispatch. Shift-cycle autonomic recovery — and the early warning signal for the burnout that follows.</p>
+    </article>
+  </div>
+
+  <figure class="positioning-quote" style="margin-top: var(--space-12);">
+    <div class="mark-q" aria-hidden="true">“</div>
+    <blockquote>
+      For the first time, the patient can see their own nervous system heal — week by week,
+      acquisition by acquisition. That's the feedback loop the long road home was missing.
+    </blockquote>
+    <cite>— VA pilot lead · 2025</cite>
+  </figure>
+</section>
+
+
+<!-- ====================== 15. ECOSYSTEM ====================== -->
+<section id="ecosystem" aria-labelledby="eco-title">
+  <div class="section-head">
+    <span class="label-caps">20 — Biopsychosocial Ecosystem</span>
+    <div>
+      <h2 id="eco-title">Five products. One operating layer. One holding company.</h2>
+      <p class="section-text">
+        PhysioPS is one of five products built on HumanOS. Each one reads the same signal graph,
+        runs the same inference layer, and renders into its own clinical surface — all under
+        Nirmata Holdings.
+      </p>
+    </div>
+  </div>
+
+  <div class="eco-grid">
+    <article class="eco-card">
+      <svg class="mark" viewBox="0 0 36 36"><circle cx="18" cy="18" r="10" fill="none" stroke="#00e5ff" stroke-width="1.4"/><path d="M5 18 Q9 11 13 18 T21 18 T29 18" fill="none" stroke="#00e5ff" stroke-width="1.4"/><path d="M5 18 Q9 25 13 18 T21 18 T29 18" fill="none" stroke="#ff6b35" stroke-width="1.4" opacity="0.85"/></svg>
+      <div>
+        <div class="role">DIAGNOSTIC</div>
+        <div class="name">PhysioPS</div>
+      </div>
+      <p>The autonomic intelligence platform. Voice-to-vagus AI, wearable PNS decoding, GenUI insight engine.</p>
+    </article>
+    <article class="eco-card">
+      <svg class="mark" viewBox="0 0 36 36"><circle cx="18" cy="18" r="13" fill="none" stroke="#a78bfa" stroke-width="1.2"/><circle cx="18" cy="18" r="4" fill="#a78bfa"/><line x1="18" y1="2" x2="18" y2="34" stroke="#a78bfa" stroke-width="0.8" stroke-dasharray="2 3"/></svg>
+      <div>
+        <div class="role">RESEARCH</div>
+        <div class="name">AntimatterAI</div>
+      </div>
+      <p>The discovery engine. Large-scale autonomic phenotyping for biopharma drug-response cohorts.</p>
+    </article>
+    <article class="eco-card">
+      <svg class="mark" viewBox="0 0 36 36"><rect x="6" y="6" width="24" height="24" rx="4" fill="none" stroke="#00bcd4" stroke-width="1.4"/><path d="M12 18h12M18 12v12" stroke="#00bcd4" stroke-width="1.4"/></svg>
+      <div>
+        <div class="role">CLINIC OS</div>
+        <div class="name">ClinixAI</div>
+      </div>
+      <p>The clinic-room operating layer. EHR-light. ANS-native. Built for autonomic specialists.</p>
+    </article>
+    <article class="eco-card">
+      <svg class="mark" viewBox="0 0 36 36"><path d="M6 28 L18 6 L30 28 Z" fill="none" stroke="#ff6b35" stroke-width="1.4"/><circle cx="18" cy="22" r="2.5" fill="#ff6b35"/></svg>
+      <div>
+        <div class="role">BIO</div>
+        <div class="name">RRG Bio</div>
+      </div>
+      <p>The wet-lab arm. Vagal-tone restoration biomarkers, regulator-grade molecular endpoints.</p>
+    </article>
+    <article class="eco-card">
+      <svg class="mark" viewBox="0 0 36 36"><path d="M8 18 Q14 8 18 18 Q22 28 28 18" fill="none" stroke="#22c55e" stroke-width="1.4"/><circle cx="8" cy="18" r="2" fill="#22c55e"/><circle cx="28" cy="18" r="2" fill="#22c55e"/></svg>
+      <div>
+        <div class="role">CONSUMER</div>
+        <div class="name">Thingk Tangk</div>
+      </div>
+      <p>The consumer surface. NeuralOrb-first daily readings. Same engine. Patient-friendly language.</p>
+    </article>
+  </div>
+
+  <p class="mono" style="margin-top: var(--space-8); font-size: 11px; color: var(--color-text-muted); letter-spacing: 0.16em; text-transform: uppercase; text-align:center;">
+    All under Nirmata Holdings · One signal graph · One inference runtime · One GenUI layer
+  </p>
+</section>
+
+
+<!-- ====================== 16. NEWS ====================== -->
+<section id="news" aria-labelledby="news-title">
+  <div class="section-head">
+    <span class="label-caps">21 — News</span>
+    <div>
+      <h2 id="news-title">In the field.</h2>
+      <p class="section-text">
+        Recent press, podcast appearances, and research mentions. We update this page each
+        time the platform earns it.
+      </p>
+    </div>
+  </div>
+
+  <div class="news-grid">
+    <article class="news-card">
+      <div class="src">Brain Medicine</div>
+      <h4>Validation of an autonomic state classifier across 8,000+ patients</h4>
+      <p>Multi-site validation cohort · F1 0.91 · AUC 0.96 · open access on publication.</p>
+      <div class="date">2026 · in press</div>
+    </article>
+    <article class="news-card">
+      <div class="src">VA pilot lead</div>
+      <h4>Two-site VA pilot tracks vagal-tone restoration in PTSD veterans</h4>
+      <p>12-month longitudinal arcs · paired with PCL-5 and PHQ-9 · pilot results read out Q3.</p>
+      <div class="date">2026 Q1</div>
+    </article>
+    <article class="news-card">
+      <div class="src">Akamai Edge</div>
+      <h4>HumanOS inference runtime ships to 240+ edge POPs</h4>
+      <p>Sub-100 ms p95 inference globally · regional residency · SOC 2 Type II.</p>
+      <div class="date">2025 Q4</div>
+    </article>
+    <article class="news-card">
+      <div class="src">SEAL community</div>
+      <h4>Field acquisitions across full deployment cycles</h4>
+      <p>Pre-deployment baseline · post-deployment delta · reintegration recovery curve.</p>
+      <div class="date">2025</div>
+    </article>
+    <article class="news-card">
+      <div class="src">Nirmata Holdings</div>
+      <h4>Five products. One signal graph.</h4>
+      <p>PhysioPS, AntimatterAI, ClinixAI, RRG Bio, Thingk Tangk — unified on HumanOS v2.</p>
+      <div class="date">2025</div>
+    </article>
+    <article class="news-card">
+      <div class="src">FDA · CDRH</div>
+      <h4>510(k) clearance for the PNS / SNS measurement engine</h4>
+      <p>Predicate-cleared signal pipeline · v2 submission underway with the 8K evidence package.</p>
+      <div class="date">2024</div>
+    </article>
+  </div>
+</section>
+
+
+<!-- ====================== 17. CLINICIAN VOICES ====================== -->
+<section id="voices" aria-labelledby="voices-title">
+  <div class="section-head">
+    <span class="label-caps">22 — Clinician voices</span>
+    <div>
+      <h2 id="voices-title">From the people running the rooms.</h2>
+      <p class="section-text">
+        Selected commentary from physicians using the platform across cardiology, neurology,
+        autonomic specialty, and primary care.
+      </p>
+    </div>
+  </div>
+
+  <div class="voices-grid">
+    <article class="voice-card">
+      <blockquote>For the first time I can hand a patient a longitudinal picture of their nervous system, and they get it. That alone changed my morning huddles.</blockquote>
+      <div class="who">
+        <div class="avatar">JM</div>
+        <div class="meta">
+          <div class="n">Dr. Jordan Marquez, MD</div>
+          <div class="t">Autonomic neurology · Chicago</div>
+        </div>
+      </div>
+    </article>
+    <article class="voice-card">
+      <blockquote>I used to wait six weeks for a tilt-table report. PhysioPS gives me an integrated reading by the time the patient is back at the desk. That is not a marginal improvement.</blockquote>
+      <div class="who">
+        <div class="avatar">AK</div>
+        <div class="meta">
+          <div class="n">Dr. Asha Krishnan, MD</div>
+          <div class="t">Cardiology · NYC</div>
+        </div>
+      </div>
+    </article>
+    <article class="voice-card">
+      <blockquote>The dual view is the breakthrough. Same data, two languages. My patients walk out understanding their own physiology — and they come back compliant.</blockquote>
+      <div class="who">
+        <div class="avatar">RP</div>
+        <div class="meta">
+          <div class="n">Dr. Rachel Park, DO</div>
+          <div class="t">Primary care · Seattle</div>
+        </div>
+      </div>
+    </article>
+    <article class="voice-card">
+      <blockquote>We're seeing PTSD veterans recognize their own vagal-tone recovery week over week. That feedback loop is therapy in itself.</blockquote>
+      <div class="who">
+        <div class="avatar">DT</div>
+        <div class="meta">
+          <div class="n">Dr. Daniel Tomlin, MD</div>
+          <div class="t">VA · psychiatry</div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<!-- ====================== 18. FINAL CTA ====================== -->
+<section id="cta" aria-labelledby="cta-title" style="border-top: 0;">
+  <div class="final-cta">
+    <span class="ps-pill ps-pill-processing" style="margin-bottom: var(--space-5);"><span class="dot"></span>HUMANOS · v2.0.0</span>
+    <h2 id="cta-title">The future of medicine is <span class="accent">autonomic.</span></h2>
+    <p>
+      Run a real .ans report on your own nervous system in eight seconds. Or book a fifteen-minute demo
+      and we'll walk a clinician through the MPG dashboard live.
+    </p>
+
+    <form class="email-row" data-cta-form aria-label="Request access">
+      <input type="email" required placeholder="you@clinic.com" aria-label="Your email address" />
+      <button class="btn btn-primary" type="submit">Book demo <span class="arrow">→</span></button>
+    </form>
+
+    <div style="margin-top: var(--space-5); display: flex; gap: var(--space-3); flex-wrap: wrap; justify-content: center;">
+      <a class="btn btn-secondary" href="https://humanos-ans-diagnostic.vercel.app" target="_blank" rel="noopener">Try the live diagnostic</a>
+      <a class="btn btn-ghost" href="#dropzone">Upload a .ans file</a>
+    </div>
+  </div>
+
+  <div class="footer-mini">
+    <div class="row">
+      <span class="mono">PhysioPS × HumanOS · v2.0.0</span>
+      <span class="mono">Nirmata Holdings · 2026</span>
+      <span class="mono">510(k) · K-pending</span>
+    </div>
+    <div class="row">
+      <a href="#humanos">HumanOS</a>
+      <a href="#research">Research</a>
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="#cta">Contact</a>
+    </div>
+    <div class="mono" style="margin-top: var(--space-2); color: var(--color-text-faint);">
+      Not a substitute for clinical judgment. The autonomic readouts on this page are demonstrative.
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script src="app.js"></script>
+<script src="marketing.js"></script>
+</body>
+</html>
