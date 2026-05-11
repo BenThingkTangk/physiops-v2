@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>PhysioPS × HumanOS — Deep Space Clinical Intelligence</title>
 <meta name="description" content="The autonomic intelligence platform. Voice-to-vagus AI, wearable PNS decoding, clinician-grade ANS reporting in 8 seconds. Built on HumanOS — the operating layer for autonomic medicine." />
-<meta name="theme-color" content="#03060a" />
+<meta name="theme-color" content="#030B14" />
 
 <meta property="og:title" content="PhysioPS × HumanOS — Deep Space Clinical Intelligence" />
 <meta property="og:description" content="The future of medicine is autonomic. Drop a .ans file. Get a clinician-grade report in 8 seconds." />
@@ -21,7 +21,9 @@
 <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="marketing.css" />
 
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2303060a'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%2300e5ff' stroke-width='1.5'/%3E%3Cpath d='M5 16 Q9 11 13 16 T21 16 T29 16' fill='none' stroke='%2300e5ff' stroke-width='1.5'/%3E%3Cpath d='M5 16 Q9 21 13 16 T21 16 T29 16' fill='none' stroke='%23ff6b35' stroke-width='1.5' opacity='0.85'/%3E%3C/svg%3E" />
+<!-- Pulse Node — Concept E: layered node, concentric rings, vagal/ECG strands -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3CradialGradient id='g' cx='50%25' cy='50%25' r='50%25'%3E%3Cstop offset='0%25' stop-color='%2300E5A0' stop-opacity='1'/%3E%3Cstop offset='55%25' stop-color='%23A855F7' stop-opacity='0.55'/%3E%3Cstop offset='100%25' stop-color='%234A9EFF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='7' fill='%23030B14'/%3E%3Ccircle cx='16' cy='16' r='13' fill='url(%23g)' opacity='0.55'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%2300E5A0' stroke-width='1.2' opacity='0.85'/%3E%3Ccircle cx='16' cy='16' r='6.5' fill='none' stroke='%23A855F7' stroke-width='1' opacity='0.7' stroke-dasharray='2 3'/%3E%3Cpath d='M3 16 Q7 11.5 11 16 T19 16 T29 16' fill='none' stroke='%2300E5A0' stroke-width='1.4' stroke-linecap='round'/%3E%3Cpath d='M3 16 Q7 20.5 11 16 T19 16 T29 16' fill='none' stroke='%234A9EFF' stroke-width='1.4' stroke-linecap='round' opacity='0.9'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23F0FBFF'/%3E%3C/svg%3E" />
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cdefs%3E%3CradialGradient id='g' cx='50%25' cy='50%25' r='50%25'%3E%3Cstop offset='0%25' stop-color='%2300E5A0'/%3E%3Cstop offset='55%25' stop-color='%23A855F7' stop-opacity='0.55'/%3E%3Cstop offset='100%25' stop-color='%234A9EFF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='180' height='180' rx='38' fill='%23030B14'/%3E%3Ccircle cx='90' cy='90' r='72' fill='url(%23g)' opacity='0.55'/%3E%3Ccircle cx='90' cy='90' r='56' fill='none' stroke='%2300E5A0' stroke-width='5' opacity='0.85'/%3E%3Ccircle cx='90' cy='90' r='36' fill='none' stroke='%23A855F7' stroke-width='3.5' opacity='0.7' stroke-dasharray='8 12'/%3E%3Cpath d='M18 90 Q40 65 62 90 T106 90 T162 90' fill='none' stroke='%2300E5A0' stroke-width='6' stroke-linecap='round'/%3E%3Cpath d='M18 90 Q40 115 62 90 T106 90 T162 90' fill='none' stroke='%234A9EFF' stroke-width='6' stroke-linecap='round' opacity='0.9'/%3E%3Ccircle cx='90' cy='90' r='13' fill='%23F0FBFF'/%3E%3C/svg%3E" />
 </head>
 <body>
 
@@ -30,19 +32,20 @@
 <!-- ====================== TOP NAV ====================== -->
 <header class="topnav" role="banner">
   <div class="brand-lockup" aria-label="PhysioPS by HumanOS">
-    <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+    <svg class="mark pulse-node" viewBox="0 0 40 40" fill="none" aria-hidden="true">
       <defs>
         <radialGradient id="navorb" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.9"/>
-          <stop offset="60%" stop-color="#a78bfa" stop-opacity="0.4"/>
-          <stop offset="100%" stop-color="#ff6b35" stop-opacity="0"/>
+          <stop offset="0%" stop-color="#00E5A0" stop-opacity="0.95"/>
+          <stop offset="55%" stop-color="#A855F7" stop-opacity="0.45"/>
+          <stop offset="100%" stop-color="#4A9EFF" stop-opacity="0"/>
         </radialGradient>
       </defs>
-      <circle cx="20" cy="20" r="18" fill="url(#navorb)" opacity="0.5"/>
-      <circle cx="20" cy="20" r="11" fill="none" stroke="#00e5ff" stroke-width="1.4"/>
-      <path d="M5 20 Q11 12 17 20 T29 20 T35 20" fill="none" stroke="#00e5ff" stroke-width="1.4"/>
-      <path d="M5 20 Q11 28 17 20 T29 20 T35 20" fill="none" stroke="#ff6b35" stroke-width="1.4" opacity="0.85"/>
-      <circle cx="20" cy="20" r="2.6" fill="#a78bfa"/>
+      <circle class="pn-halo" cx="20" cy="20" r="19" fill="url(#navorb)" opacity="0.6"/>
+      <circle class="pn-ring-out" cx="20" cy="20" r="14" fill="none" stroke="#00E5A0" stroke-width="1.2" opacity="0.88"/>
+      <circle class="pn-ring-in" cx="20" cy="20" r="9" fill="none" stroke="#A855F7" stroke-width="1" opacity="0.75" stroke-dasharray="2.5 3.5"/>
+      <path d="M4 20 Q9 13 14 20 T24 20 T36 20" fill="none" stroke="#00E5A0" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M4 20 Q9 27 14 20 T24 20 T36 20" fill="none" stroke="#4A9EFF" stroke-width="1.4" stroke-linecap="round" opacity="0.92"/>
+      <circle class="pn-core" cx="20" cy="20" r="3" fill="#F0FBFF"/>
     </svg>
     <div class="word">
       <span class="a">PhysioPS × HumanOS</span>
@@ -60,7 +63,7 @@
 
   <div class="topnav-meta">
     <span class="pill"><span class="dot" aria-hidden="true"></span>System Nominal</span>
-    <span class="timestamp mono" id="now">— v2.0.0 / Nirmata Holdings</span>
+    <span class="timestamp mono" id="now">— v2.3.0 / Nirmata Holdings</span>
   </div>
 </header>
 
@@ -73,14 +76,14 @@
     <svg viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice">
       <defs>
         <linearGradient id="helP" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#00e5ff" stop-opacity="0"/>
-          <stop offset="50%" stop-color="#00e5ff" stop-opacity="1"/>
-          <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+          <stop offset="0%" stop-color="#00E5A0" stop-opacity="0"/>
+          <stop offset="50%" stop-color="#00E5A0" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#00E5A0" stop-opacity="0"/>
         </linearGradient>
         <linearGradient id="helS" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#ff6b35" stop-opacity="0"/>
-          <stop offset="50%" stop-color="#ff6b35" stop-opacity="1"/>
-          <stop offset="100%" stop-color="#ff6b35" stop-opacity="0"/>
+          <stop offset="0%" stop-color="#4A9EFF" stop-opacity="0"/>
+          <stop offset="50%" stop-color="#4A9EFF" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#4A9EFF" stop-opacity="0"/>
         </linearGradient>
       </defs>
       <g class="helix-anim">
@@ -132,25 +135,25 @@
           <svg viewBox="-150 -150 300 300" aria-hidden="true">
             <defs>
               <radialGradient id="coreG" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.9"/>
-                <stop offset="60%" stop-color="#a78bfa" stop-opacity="0.5"/>
-                <stop offset="100%" stop-color="#ff6b35" stop-opacity="0"/>
+                <stop offset="0%" stop-color="#00E5A0" stop-opacity="0.9"/>
+                <stop offset="60%" stop-color="#A855F7" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="#4A9EFF" stop-opacity="0"/>
               </radialGradient>
             </defs>
             <g class="core-pulse">
               <circle r="38" fill="url(#coreG)"/>
-              <circle r="14" fill="#00e5ff" opacity="0.7"/>
+              <circle r="14" fill="#00E5A0" opacity="0.7"/>
               <circle r="6"  fill="#f0f4ff"/>
             </g>
             <g class="core-ring">
-              <circle r="60" fill="none" stroke="#00e5ff" stroke-width="0.6" opacity="0.42"/>
-              <circle r="86" fill="none" stroke="#a78bfa" stroke-width="0.6" opacity="0.32" stroke-dasharray="3 8"/>
-              <circle cx="86" cy="0" r="2.2" fill="#00e5ff" class="core-orbit-dot"/>
-              <circle cx="-86" cy="0" r="1.8" fill="#a78bfa" class="core-orbit-dot" style="animation-delay: 0.8s;"/>
+              <circle r="60" fill="none" stroke="#00E5A0" stroke-width="0.6" opacity="0.42"/>
+              <circle r="86" fill="none" stroke="#A855F7" stroke-width="0.6" opacity="0.32" stroke-dasharray="3 8"/>
+              <circle cx="86" cy="0" r="2.2" fill="#00E5A0" class="core-orbit-dot"/>
+              <circle cx="-86" cy="0" r="1.8" fill="#A855F7" class="core-orbit-dot" style="animation-delay: 0.8s;"/>
             </g>
             <g class="core-ring rev">
-              <circle r="112" fill="none" stroke="#ff6b35" stroke-width="0.6" opacity="0.28" stroke-dasharray="2 6"/>
-              <circle cx="68" cy="0" r="1.6" fill="#ff6b35" class="core-orbit-dot" style="animation-delay: 0.4s;"/>
+              <circle r="112" fill="none" stroke="#4A9EFF" stroke-width="0.6" opacity="0.28" stroke-dasharray="2 6"/>
+              <circle cx="68" cy="0" r="1.6" fill="#4A9EFF" class="core-orbit-dot" style="animation-delay: 0.4s;"/>
             </g>
             <g class="core-ring">
               <circle r="128" fill="none" stroke="rgba(210,235,255,0.18)" stroke-width="0.4"/>
@@ -185,7 +188,7 @@
   <div class="positioning-grid">
     <article class="pillar">
       <div class="num">PILLAR · 01</div>
-      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#00e5ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: var(--space-5);">
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#00E5A0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: var(--space-5);">
         <path d="M12 2v6"/><path d="M12 16v6"/><path d="M9 8a3 3 0 0 1 6 0v6a3 3 0 0 1-6 0Z"/>
         <path d="M5 12c-1.5 0 -3 1 -3 3"/><path d="M19 12c1.5 0 3 1 3 3"/>
       </svg>
@@ -194,17 +197,17 @@
     </article>
     <article class="pillar">
       <div class="num">PILLAR · 02</div>
-      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#00e5ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: var(--space-5);">
-        <path d="M3 12h3l2 -6 4 12 2 -6h7"/><circle cx="20" cy="12" r="1.5" fill="#ff6b35" stroke="#ff6b35"/>
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#00E5A0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: var(--space-5);">
+        <path d="M3 12h3l2 -6 4 12 2 -6h7"/><circle cx="20" cy="12" r="1.5" fill="#4A9EFF" stroke="#4A9EFF"/>
       </svg>
       <h3>Wearable PNS Decoding</h3>
       <p>Polar H10, Wahoo TICKR, Garmin HRM-Pro stream beat-to-beat RR intervals over Web Bluetooth. We decompose into RFa, LFa, P/S ratio, HRV, and 14 more measurements.</p>
     </article>
     <article class="pillar">
       <div class="num">PILLAR · 03</div>
-      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#00e5ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: var(--space-5);">
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#00E5A0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: var(--space-5);">
         <rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/>
-        <circle cx="7" cy="13" r="1.2" fill="#00e5ff"/><path d="M11 13h7"/>
+        <circle cx="7" cy="13" r="1.2" fill="#00E5A0"/><path d="M11 13h7"/>
       </svg>
       <h3>GenUI Insight Engine</h3>
       <p>The same data, rendered in two languages: a clinician-dense MPG dashboard and a patient-friendly NeuralOrb with plain-English insights. Generated, not templated.</p>
@@ -305,8 +308,8 @@
       <svg viewBox="0 0 320 480" aria-hidden="true">
         <defs>
           <linearGradient id="bodyG" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="rgba(0,229,255,0.12)"/>
-            <stop offset="100%" stop-color="rgba(167,139,250,0.05)"/>
+            <stop offset="0%" stop-color="rgba(0,229,160,0.12)"/>
+            <stop offset="100%" stop-color="rgba(168,85,247,0.05)"/>
           </linearGradient>
         </defs>
 
@@ -346,13 +349,13 @@
 
         <!-- Brainstem core -->
         <g class="bm-pulse">
-          <circle cx="160" cy="78" r="10" fill="rgba(167,139,250,0.20)" stroke="#a78bfa" stroke-width="1.2"/>
-          <circle cx="160" cy="78" r="3.5" fill="#a78bfa"/>
+          <circle cx="160" cy="78" r="10" fill="rgba(168,85,247,0.20)" stroke="#A855F7" stroke-width="1.2"/>
+          <circle cx="160" cy="78" r="3.5" fill="#A855F7"/>
         </g>
 
         <!-- Heart -->
         <g class="bm-pulse" style="transform-origin: 160px 200px;">
-          <ellipse cx="160" cy="200" rx="14" ry="10" class="bm-organ" fill="rgba(0,229,255,0.10)"/>
+          <ellipse cx="160" cy="200" rx="14" ry="10" class="bm-organ" fill="rgba(0,229,160,0.10)"/>
           <text x="160" y="204" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#a7b4c8" letter-spacing="1.5">♥</text>
         </g>
 
@@ -376,7 +379,7 @@
               d="M180 100 L 188 140 L 192 180 L 196 220 L 200 260 L 202 310 L 198 360" style="animation-delay: -1.5s;"/>
 
         <!-- Ganglia dots -->
-        <g fill="#ff6b35">
+        <g fill="#4A9EFF">
           <circle cx="132" cy="140" r="2"/><circle cx="128" cy="180" r="2"/><circle cx="124" cy="220" r="2"/>
           <circle cx="120" cy="260" r="2"/><circle cx="118" cy="310" r="2"/>
           <circle cx="188" cy="140" r="2"/><circle cx="192" cy="180" r="2"/><circle cx="196" cy="220" r="2"/>
@@ -386,8 +389,8 @@
         <!-- Annotations -->
         <g font-family="JetBrains Mono" font-size="9" letter-spacing="1.2" fill="#a7b4c8">
           <text x="180" y="78" text-anchor="start">BRAINSTEM</text>
-          <text x="220" y="200" text-anchor="start" fill="#00e5ff">VAGUS · CN X</text>
-          <text x="14" y="220" text-anchor="start" fill="#ff6b35">SYMPATHETIC CHAIN</text>
+          <text x="220" y="200" text-anchor="start" fill="#00E5A0">VAGUS · CN X</text>
+          <text x="14" y="220" text-anchor="start" fill="#4A9EFF">SYMPATHETIC CHAIN</text>
           <text x="200" y="270" text-anchor="start">ENTERIC GUT</text>
         </g>
       </svg>
@@ -480,19 +483,19 @@
       <svg viewBox="-150 -150 300 300">
         <defs>
           <radialGradient id="orbcoreG" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.95"/>
-            <stop offset="50%" stop-color="#00e5ff" stop-opacity="0.5"/>
-            <stop offset="100%" stop-color="#ff6b35" stop-opacity="0"/>
+            <stop offset="0%" stop-color="#A855F7" stop-opacity="0.95"/>
+            <stop offset="50%" stop-color="#00E5A0" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#4A9EFF" stop-opacity="0"/>
           </radialGradient>
           <radialGradient id="orbcoreInner" cx="50%" cy="50%" r="50%">
             <stop offset="0%" stop-color="#f0f4ff" stop-opacity="1"/>
-            <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#A855F7" stop-opacity="0.5"/>
           </radialGradient>
         </defs>
 
         <!-- Outer glow -->
-        <circle r="130" fill="none" stroke="rgba(0,229,255,0.10)" stroke-width="0.5"/>
-        <circle r="118" fill="none" stroke="rgba(167,139,250,0.10)" stroke-width="0.5"/>
+        <circle r="130" fill="none" stroke="rgba(0,229,160,0.10)" stroke-width="0.5"/>
+        <circle r="118" fill="none" stroke="rgba(168,85,247,0.10)" stroke-width="0.5"/>
 
         <!-- Strand P (parasympathetic) — full helix circle parametric path -->
         <g class="orb-rotate">
@@ -500,7 +503,7 @@
             d="M 0 -110 C 70 -110 110 -50 110 0 C 110 60 70 110 0 110 C -70 110 -110 60 -110 0 C -110 -50 -70 -110 0 -110 Z"
             stroke-dasharray="3 6" />
           <!-- Particle along strand -->
-          <circle r="4" fill="#00e5ff" class="orb-particle">
+          <circle r="4" fill="#00E5A0" class="orb-particle">
             <animateMotion dur="14s" repeatCount="indefinite"
               path="M 0 -110 C 70 -110 110 -50 110 0 C 110 60 70 110 0 110 C -70 110 -110 60 -110 0 C -110 -50 -70 -110 0 -110 Z" />
           </circle>
@@ -511,7 +514,7 @@
           <path class="orb-helix-s"
             d="M 0 -90 C -60 -90 -100 -40 -100 0 C -100 50 -60 90 0 90 C 60 90 100 50 100 0 C 100 -40 60 -90 0 -90 Z"
             stroke-dasharray="2 5" />
-          <circle r="3.5" fill="#ff6b35" class="orb-particle" style="animation-delay: -2s;">
+          <circle r="3.5" fill="#4A9EFF" class="orb-particle" style="animation-delay: -2s;">
             <animateMotion dur="16s" repeatCount="indefinite"
               path="M 0 -90 C -60 -90 -100 -40 -100 0 C -100 50 -60 90 0 90 C 60 90 100 50 100 0 C 100 -40 60 -90 0 -90 Z" />
           </circle>
@@ -519,10 +522,10 @@
 
         <!-- Cross-rungs -->
         <g class="orb-rotate" style="animation-duration: 60s;">
-          <line x1="-100" y1="0"  x2="100" y2="0"  stroke="rgba(167,139,250,0.18)" stroke-width="0.6"/>
-          <line x1="0"   y1="-100" x2="0"  y2="100" stroke="rgba(167,139,250,0.18)" stroke-width="0.6"/>
-          <line x1="-72" y1="-72" x2="72"  y2="72"  stroke="rgba(167,139,250,0.10)" stroke-width="0.6"/>
-          <line x1="-72" y1="72"  x2="72"  y2="-72" stroke="rgba(167,139,250,0.10)" stroke-width="0.6"/>
+          <line x1="-100" y1="0"  x2="100" y2="0"  stroke="rgba(168,85,247,0.18)" stroke-width="0.6"/>
+          <line x1="0"   y1="-100" x2="0"  y2="100" stroke="rgba(168,85,247,0.18)" stroke-width="0.6"/>
+          <line x1="-72" y1="-72" x2="72"  y2="72"  stroke="rgba(168,85,247,0.10)" stroke-width="0.6"/>
+          <line x1="-72" y1="72"  x2="72"  y2="-72" stroke="rgba(168,85,247,0.10)" stroke-width="0.6"/>
         </g>
 
         <!-- Core -->
@@ -607,21 +610,21 @@
         <svg viewBox="0 0 88 108" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="filebg" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="rgba(0,229,255,0.18)"/>
-              <stop offset="100%" stop-color="rgba(167,139,250,0.10)"/>
+              <stop offset="0%" stop-color="rgba(0,229,160,0.18)"/>
+              <stop offset="100%" stop-color="rgba(168,85,247,0.10)"/>
             </linearGradient>
           </defs>
           <path d="M8 4 H 60 L 84 28 V 100 a 4 4 0 0 1 -4 4 H 8 a 4 4 0 0 1 -4 -4 V 8 a 4 4 0 0 1 4 -4 Z"
-                fill="url(#filebg)" stroke="#00e5ff" stroke-width="1.4"/>
-          <path d="M60 4 V 24 a 4 4 0 0 0 4 4 H 84" fill="none" stroke="#00e5ff" stroke-width="1.4"/>
+                fill="url(#filebg)" stroke="#00E5A0" stroke-width="1.4"/>
+          <path d="M60 4 V 24 a 4 4 0 0 0 4 4 H 84" fill="none" stroke="#00E5A0" stroke-width="1.4"/>
 
-          <text x="44" y="56" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#00e5ff" letter-spacing="2">.ans</text>
+          <text x="44" y="56" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#00E5A0" letter-spacing="2">.ans</text>
 
           <!-- mini waveform -->
           <path d="M14 78 Q22 70 30 78 T46 78 T62 78 T78 78"
-                stroke="#00e5ff" stroke-width="1.2" fill="none" opacity="0.9"/>
+                stroke="#00E5A0" stroke-width="1.2" fill="none" opacity="0.9"/>
           <path d="M14 86 Q22 92 30 86 T46 86 T62 86 T78 86"
-                stroke="#ff6b35" stroke-width="1.2" fill="none" opacity="0.85"/>
+                stroke="#4A9EFF" stroke-width="1.2" fill="none" opacity="0.85"/>
         </svg>
       </div>
       <h3>Drop your .ans file here</h3>
@@ -677,7 +680,7 @@
         </div>
         <span class="timing">2.8s</span>
       </article>
-      <article class="pipeline-step" style="border-color: rgba(0,229,255,0.32);">
+      <article class="pipeline-step" style="border-color: rgba(0,229,160,0.32);">
         <span class="step-num" style="background: rgba(34,197,94,0.14); color: #86efac; border-color: rgba(34,197,94,0.35);">✓</span>
         <div class="step-body">
           <div class="t">Report ready</div>
@@ -760,9 +763,9 @@
       <p class="clinical">LFa stayed above 4.1 bpm² for 73 % of sleep duration — patient pattern consistent with prior episodes preceding migraine onset. Recommend HRV-biofeedback session before bed.</p>
       <div class="spark-row">
         <svg viewBox="0 0 200 36" preserveAspectRatio="none" aria-hidden="true">
-          <defs><linearGradient id="spk3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(255,107,53,0.45)"/><stop offset="100%" stop-color="rgba(255,107,53,0)"/></linearGradient></defs>
+          <defs><linearGradient id="spk3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(74,158,255,0.45)"/><stop offset="100%" stop-color="rgba(74,158,255,0)"/></linearGradient></defs>
           <path d="M0 18 L25 14 L50 8 L75 12 L100 6 L125 10 L150 4 L175 8 L200 2 L200 36 L0 36 Z" fill="url(#spk3)"/>
-          <path d="M0 18 L25 14 L50 8 L75 12 L100 6 L125 10 L150 4 L175 8 L200 2" fill="none" stroke="#ff6b35" stroke-width="1.5"/>
+          <path d="M0 18 L25 14 L50 8 L75 12 L100 6 L125 10 L150 4 L175 8 L200 2" fill="none" stroke="#4A9EFF" stroke-width="1.5"/>
         </svg>
         <span class="val">4.32<span class="delta" style="color:#ffb198;">▲ 38%</span></span>
       </div>
@@ -808,9 +811,9 @@
       <div class="lbl"><span>SPECTRAL BANDS</span><span class="ps-pill ps-pill-processing"><span class="dot"></span>LIVE</span></div>
       <svg class="fig" viewBox="0 0 240 80" preserveAspectRatio="none" aria-hidden="true">
         <rect x="6"   y="48" width="48" height="28" fill="rgba(100,116,139,0.55)" rx="2"/>
-        <rect x="58"  y="30" width="58" height="46" fill="rgba(255,107,53,0.7)" rx="2"/>
-        <rect x="120" y="14" width="58" height="62" fill="rgba(0,229,255,0.7)" rx="2"/>
-        <rect x="182" y="40" width="52" height="36" fill="rgba(167,139,250,0.55)" rx="2"/>
+        <rect x="58"  y="30" width="58" height="46" fill="rgba(74,158,255,0.7)" rx="2"/>
+        <rect x="120" y="14" width="58" height="62" fill="rgba(0,229,160,0.7)" rx="2"/>
+        <rect x="182" y="40" width="52" height="36" fill="rgba(168,85,247,0.55)" rx="2"/>
         <g font-family="JetBrains Mono" font-size="8" fill="#a7b4c8" letter-spacing="1">
           <text x="6" y="44">VLF</text><text x="58" y="24">LF·S</text><text x="120" y="8">HF·P</text><text x="182" y="34">UHF</text>
         </g>
@@ -824,17 +827,17 @@
         <g stroke="rgba(210,235,255,0.10)" stroke-width="0.8">
           <line x1="120" y1="0" x2="120" y2="80"/><line x1="0" y1="40" x2="240" y2="40"/>
         </g>
-        <g fill="#00e5ff" opacity="0.5">
+        <g fill="#00E5A0" opacity="0.5">
           <circle cx="48"  cy="22" r="2"/><circle cx="72" cy="34" r="2"/><circle cx="92" cy="28" r="2"/>
           <circle cx="108" cy="36" r="2"/><circle cx="62" cy="46" r="2"/><circle cx="80" cy="20" r="2"/>
         </g>
-        <g fill="#ff6b35" opacity="0.45">
+        <g fill="#4A9EFF" opacity="0.45">
           <circle cx="160" cy="58" r="2"/><circle cx="184" cy="46" r="2"/><circle cx="200" cy="62" r="2"/>
           <circle cx="170" cy="40" r="2"/><circle cx="210" cy="50" r="2"/><circle cx="148" cy="52" r="2"/>
         </g>
         <!-- Patient point with confidence ring -->
-        <circle cx="148" cy="32" r="10" fill="rgba(167,139,250,0.14)" stroke="rgba(167,139,250,0.55)" stroke-width="1"/>
-        <circle cx="148" cy="32" r="3.5" fill="#a78bfa" stroke="#03060a" stroke-width="1"/>
+        <circle cx="148" cy="32" r="10" fill="rgba(168,85,247,0.14)" stroke="rgba(168,85,247,0.55)" stroke-width="1"/>
+        <circle cx="148" cy="32" r="3.5" fill="#A855F7" stroke="#030B14" stroke-width="1"/>
       </svg>
       <div class="sub">Patient · 04812-V plotted against cohort</div>
     </article>
@@ -842,9 +845,9 @@
     <article class="mpg-card">
       <div class="lbl"><span>LONGITUDINAL TREND</span><span class="mono" style="font-size:10px; color:var(--color-text-muted);">90 D</span></div>
       <svg class="fig" viewBox="0 0 240 80" preserveAspectRatio="none" aria-hidden="true">
-        <defs><linearGradient id="mpg4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(167,139,250,0.36)"/><stop offset="100%" stop-color="rgba(167,139,250,0)"/></linearGradient></defs>
-        <path d="M0 50 Q40 38 80 44 T160 36 T240 28 L240 60 Q160 48 80 56 T0 52 Z" fill="rgba(167,139,250,0.12)"/>
-        <path d="M0 54 Q40 46 80 48 T160 40 T240 34" fill="none" stroke="#a78bfa" stroke-width="1.5"/>
+        <defs><linearGradient id="mpg4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(168,85,247,0.36)"/><stop offset="100%" stop-color="rgba(168,85,247,0)"/></linearGradient></defs>
+        <path d="M0 50 Q40 38 80 44 T160 36 T240 28 L240 60 Q160 48 80 56 T0 52 Z" fill="rgba(168,85,247,0.12)"/>
+        <path d="M0 54 Q40 46 80 48 T160 40 T240 34" fill="none" stroke="#A855F7" stroke-width="1.5"/>
         <line x1="0" y1="60" x2="240" y2="60" stroke="#64748b" stroke-width="0.8" stroke-dasharray="2 4"/>
       </svg>
       <div class="sub">HRV composite · trending up · conf 0.88</div>
@@ -860,7 +863,7 @@
           <line x1="80" y1="0" x2="80" y2="80"/><line x1="160" y1="0" x2="160" y2="80"/><line x1="240" y1="0" x2="240" y2="80"/><line x1="320" y1="0" x2="320" y2="80"/><line x1="400" y1="0" x2="400" y2="80"/>
         </g>
         <path d="M0 40 L20 40 L24 38 L28 42 L32 28 L36 56 L40 36 L44 40 L80 40 L84 40 L100 40 L104 38 L108 42 L112 28 L116 56 L120 36 L124 40 L160 40 L180 40 L184 38 L188 42 L192 28 L196 56 L200 36 L204 40 L240 40 L260 40 L264 38 L268 42 L272 28 L276 56 L280 36 L284 40 L320 40 L340 40 L344 38 L348 42 L352 28 L356 56 L360 36 L364 40 L400 40 L420 40 L424 38 L428 42 L432 28 L436 56 L440 36 L444 40 L480 40"
-              fill="none" stroke="#00e5ff" stroke-width="1.4" filter="url(#none)" />
+              fill="none" stroke="#00E5A0" stroke-width="1.4" filter="url(#none)" />
       </svg>
       <div class="sub">256 Hz · clean · last 5.0 s window</div>
     </article>
@@ -918,11 +921,11 @@
 
       <svg viewBox="0 0 480 100" preserveAspectRatio="none" style="width:100%; height: 90px;">
         <defs>
-          <linearGradient id="dvP1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(0,229,255,0.4)"/><stop offset="100%" stop-color="rgba(0,229,255,0)"/></linearGradient>
+          <linearGradient id="dvP1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(0,229,160,0.4)"/><stop offset="100%" stop-color="rgba(0,229,160,0)"/></linearGradient>
         </defs>
         <path d="M0 60 Q30 40 60 50 T120 40 T180 50 T240 38 T300 48 T360 32 T420 42 T480 36 L480 100 L0 100 Z" fill="url(#dvP1)"/>
-        <path d="M0 60 Q30 40 60 50 T120 40 T180 50 T240 38 T300 48 T360 32 T420 42 T480 36" fill="none" stroke="#00e5ff" stroke-width="1.5"/>
-        <path d="M0 56 Q30 70 60 60 T120 72 T180 60 T240 70 T300 60 T360 76 T420 62 T480 68" fill="none" stroke="#ff6b35" stroke-width="1.4" opacity="0.85"/>
+        <path d="M0 60 Q30 40 60 50 T120 40 T180 50 T240 38 T300 48 T360 32 T420 42 T480 36" fill="none" stroke="#00E5A0" stroke-width="1.5"/>
+        <path d="M0 56 Q30 70 60 60 T120 72 T180 60 T240 70 T300 60 T360 76 T420 62 T480 68" fill="none" stroke="#4A9EFF" stroke-width="1.4" opacity="0.85"/>
       </svg>
 
       <div style="margin-top: var(--space-4); display: grid; gap: var(--space-2);">
@@ -937,17 +940,17 @@
       <svg class="patient-orb" viewBox="-100 -100 200 200" aria-hidden="true">
         <defs>
           <radialGradient id="pOrb" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.85"/>
-            <stop offset="60%" stop-color="#00e5ff" stop-opacity="0.4"/>
-            <stop offset="100%" stop-color="#ff6b35" stop-opacity="0"/>
+            <stop offset="0%" stop-color="#A855F7" stop-opacity="0.85"/>
+            <stop offset="60%" stop-color="#00E5A0" stop-opacity="0.4"/>
+            <stop offset="100%" stop-color="#4A9EFF" stop-opacity="0"/>
           </radialGradient>
         </defs>
-        <circle r="80" fill="none" stroke="rgba(167,139,250,0.18)" stroke-width="0.6"/>
+        <circle r="80" fill="none" stroke="rgba(168,85,247,0.18)" stroke-width="0.6"/>
         <g class="orb-rotate">
-          <ellipse rx="70" ry="40" fill="none" stroke="#00e5ff" stroke-width="1.4" stroke-dasharray="3 6" opacity="0.7"/>
+          <ellipse rx="70" ry="40" fill="none" stroke="#00E5A0" stroke-width="1.4" stroke-dasharray="3 6" opacity="0.7"/>
         </g>
         <g class="orb-rotate rev">
-          <ellipse rx="40" ry="70" fill="none" stroke="#ff6b35" stroke-width="1.4" stroke-dasharray="2 5" opacity="0.6"/>
+          <ellipse rx="40" ry="70" fill="none" stroke="#4A9EFF" stroke-width="1.4" stroke-dasharray="2 5" opacity="0.6"/>
         </g>
         <g class="orb-core">
           <circle r="32" fill="url(#pOrb)"/>
@@ -1177,17 +1180,17 @@
         <svg viewBox="0 0 800 60" preserveAspectRatio="none" style="width:100%;height:100%;">
           <defs>
             <linearGradient id="rcArrow" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stop-color="#ff6b35" stop-opacity="0.4"/>
-              <stop offset="50%" stop-color="#a78bfa" stop-opacity="0.7"/>
-              <stop offset="100%" stop-color="#00e5ff" stop-opacity="1"/>
+              <stop offset="0%" stop-color="#4A9EFF" stop-opacity="0.4"/>
+              <stop offset="50%" stop-color="#A855F7" stop-opacity="0.7"/>
+              <stop offset="100%" stop-color="#00E5A0" stop-opacity="1"/>
             </linearGradient>
           </defs>
           <line x1="20" y1="30" x2="780" y2="30" stroke="url(#rcArrow)" stroke-width="2"/>
-          <polygon points="780,30 768,24 768,36" fill="#00e5ff"/>
+          <polygon points="780,30 768,24 768,36" fill="#00E5A0"/>
           <g font-family="JetBrains Mono" font-size="10" letter-spacing="2" text-anchor="middle">
             <text x="120" y="20" fill="#a7b4c8">SYMPTOMS</text>
             <text x="400" y="20" fill="#a7b4c8">DOWNSTREAM</text>
-            <text x="680" y="20" fill="#00e5ff">AUTONOMIC ROOT</text>
+            <text x="680" y="20" fill="#00E5A0">AUTONOMIC ROOT</text>
           </g>
         </svg>
       </div>
@@ -1257,8 +1260,8 @@
     <svg viewBox="0 0 800 220" preserveAspectRatio="xMidYMid meet" style="width:100%; height:auto;">
       <defs>
         <radialGradient id="globe" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="rgba(0,229,255,0.15)"/>
-          <stop offset="100%" stop-color="rgba(0,229,255,0)"/>
+          <stop offset="0%" stop-color="rgba(0,229,160,0.15)"/>
+          <stop offset="100%" stop-color="rgba(0,229,160,0)"/>
         </radialGradient>
       </defs>
       <ellipse cx="400" cy="110" rx="380" ry="100" fill="url(#globe)"/>
@@ -1271,13 +1274,13 @@
       </g>
       <!-- Edge nodes -->
       <g>
-        <g><circle cx="160" cy="80" r="5" fill="#00e5ff"/><circle cx="160" cy="80" r="14" fill="none" stroke="#00e5ff" stroke-width="0.6" opacity="0.4"/></g>
-        <g><circle cx="320" cy="50" r="5" fill="#00e5ff"/><circle cx="320" cy="50" r="14" fill="none" stroke="#00e5ff" stroke-width="0.6" opacity="0.4"/></g>
-        <g><circle cx="500" cy="140" r="5" fill="#a78bfa"/><circle cx="500" cy="140" r="14" fill="none" stroke="#a78bfa" stroke-width="0.6" opacity="0.4"/></g>
-        <g><circle cx="640" cy="90" r="5" fill="#00e5ff"/><circle cx="640" cy="90" r="14" fill="none" stroke="#00e5ff" stroke-width="0.6" opacity="0.4"/></g>
-        <g><circle cx="240" cy="160" r="5" fill="#ff6b35"/><circle cx="240" cy="160" r="14" fill="none" stroke="#ff6b35" stroke-width="0.6" opacity="0.4"/></g>
+        <g><circle cx="160" cy="80" r="5" fill="#00E5A0"/><circle cx="160" cy="80" r="14" fill="none" stroke="#00E5A0" stroke-width="0.6" opacity="0.4"/></g>
+        <g><circle cx="320" cy="50" r="5" fill="#00E5A0"/><circle cx="320" cy="50" r="14" fill="none" stroke="#00E5A0" stroke-width="0.6" opacity="0.4"/></g>
+        <g><circle cx="500" cy="140" r="5" fill="#A855F7"/><circle cx="500" cy="140" r="14" fill="none" stroke="#A855F7" stroke-width="0.6" opacity="0.4"/></g>
+        <g><circle cx="640" cy="90" r="5" fill="#00E5A0"/><circle cx="640" cy="90" r="14" fill="none" stroke="#00E5A0" stroke-width="0.6" opacity="0.4"/></g>
+        <g><circle cx="240" cy="160" r="5" fill="#4A9EFF"/><circle cx="240" cy="160" r="14" fill="none" stroke="#4A9EFF" stroke-width="0.6" opacity="0.4"/></g>
       </g>
-      <g stroke="#00e5ff" stroke-width="0.8" fill="none" opacity="0.45" stroke-dasharray="3 4">
+      <g stroke="#00E5A0" stroke-width="0.8" fill="none" opacity="0.45" stroke-dasharray="3 4">
         <path d="M160 80 Q260 100 320 50"/>
         <path d="M320 50 Q420 100 500 140"/>
         <path d="M500 140 Q570 110 640 90"/>
@@ -1286,8 +1289,8 @@
       </g>
       <g font-family="JetBrains Mono" font-size="9" fill="#a7b4c8" letter-spacing="1">
         <text x="160" y="68">SFO</text><text x="320" y="38">NYC</text>
-        <text x="500" y="160" fill="#a78bfa">FRA</text><text x="640" y="78">SIN</text>
-        <text x="240" y="180" fill="#ff6b35">SAO</text>
+        <text x="500" y="160" fill="#A855F7">FRA</text><text x="640" y="78">SIN</text>
+        <text x="240" y="180" fill="#4A9EFF">SAO</text>
       </g>
     </svg>
 
@@ -1318,8 +1321,8 @@
     <article class="pillar">
       <div class="num">DEVICE · 01</div>
       <svg width="60" height="60" viewBox="0 0 60 60" style="margin-bottom: var(--space-4);">
-        <rect x="6" y="22" width="48" height="16" rx="3" fill="rgba(0,229,255,0.08)" stroke="#00e5ff" stroke-width="1.2"/>
-        <circle cx="20" cy="30" r="3" fill="#00e5ff"/>
+        <rect x="6" y="22" width="48" height="16" rx="3" fill="rgba(0,229,160,0.08)" stroke="#00E5A0" stroke-width="1.2"/>
+        <circle cx="20" cy="30" r="3" fill="#00E5A0"/>
         <text x="30" y="34" font-family="JetBrains Mono" font-size="8" fill="#a7b4c8" letter-spacing="1">POLAR H10</text>
       </svg>
       <h3>Polar H10</h3>
@@ -1328,8 +1331,8 @@
     <article class="pillar">
       <div class="num">DEVICE · 02</div>
       <svg width="60" height="60" viewBox="0 0 60 60" style="margin-bottom: var(--space-4);">
-        <rect x="6" y="22" width="48" height="16" rx="3" fill="rgba(255,107,53,0.08)" stroke="#ff6b35" stroke-width="1.2"/>
-        <circle cx="20" cy="30" r="3" fill="#ff6b35"/>
+        <rect x="6" y="22" width="48" height="16" rx="3" fill="rgba(74,158,255,0.08)" stroke="#4A9EFF" stroke-width="1.2"/>
+        <circle cx="20" cy="30" r="3" fill="#4A9EFF"/>
         <text x="30" y="34" font-family="JetBrains Mono" font-size="7" fill="#a7b4c8" letter-spacing="1">WAHOO TICKR</text>
       </svg>
       <h3>Wahoo TICKR</h3>
@@ -1338,8 +1341,8 @@
     <article class="pillar">
       <div class="num">DEVICE · 03</div>
       <svg width="60" height="60" viewBox="0 0 60 60" style="margin-bottom: var(--space-4);">
-        <rect x="6" y="22" width="48" height="16" rx="3" fill="rgba(167,139,250,0.08)" stroke="#a78bfa" stroke-width="1.2"/>
-        <circle cx="20" cy="30" r="3" fill="#a78bfa"/>
+        <rect x="6" y="22" width="48" height="16" rx="3" fill="rgba(168,85,247,0.08)" stroke="#A855F7" stroke-width="1.2"/>
+        <circle cx="20" cy="30" r="3" fill="#A855F7"/>
         <text x="30" y="34" font-family="JetBrains Mono" font-size="6" fill="#a7b4c8" letter-spacing="1">GARMIN HRM-PRO</text>
       </svg>
       <h3>Garmin HRM-Pro</h3>
@@ -1449,7 +1452,7 @@
 
   <div class="eco-grid">
     <article class="eco-card">
-      <svg class="mark" viewBox="0 0 36 36"><circle cx="18" cy="18" r="10" fill="none" stroke="#00e5ff" stroke-width="1.4"/><path d="M5 18 Q9 11 13 18 T21 18 T29 18" fill="none" stroke="#00e5ff" stroke-width="1.4"/><path d="M5 18 Q9 25 13 18 T21 18 T29 18" fill="none" stroke="#ff6b35" stroke-width="1.4" opacity="0.85"/></svg>
+      <svg class="mark" viewBox="0 0 36 36"><circle cx="18" cy="18" r="10" fill="none" stroke="#00E5A0" stroke-width="1.4"/><path d="M5 18 Q9 11 13 18 T21 18 T29 18" fill="none" stroke="#00E5A0" stroke-width="1.4"/><path d="M5 18 Q9 25 13 18 T21 18 T29 18" fill="none" stroke="#4A9EFF" stroke-width="1.4" opacity="0.85"/></svg>
       <div>
         <div class="role">DIAGNOSTIC</div>
         <div class="name">PhysioPS</div>
@@ -1457,7 +1460,7 @@
       <p>The autonomic intelligence platform. Voice-to-vagus AI, wearable PNS decoding, GenUI insight engine.</p>
     </article>
     <article class="eco-card">
-      <svg class="mark" viewBox="0 0 36 36"><circle cx="18" cy="18" r="13" fill="none" stroke="#a78bfa" stroke-width="1.2"/><circle cx="18" cy="18" r="4" fill="#a78bfa"/><line x1="18" y1="2" x2="18" y2="34" stroke="#a78bfa" stroke-width="0.8" stroke-dasharray="2 3"/></svg>
+      <svg class="mark" viewBox="0 0 36 36"><circle cx="18" cy="18" r="13" fill="none" stroke="#A855F7" stroke-width="1.2"/><circle cx="18" cy="18" r="4" fill="#A855F7"/><line x1="18" y1="2" x2="18" y2="34" stroke="#A855F7" stroke-width="0.8" stroke-dasharray="2 3"/></svg>
       <div>
         <div class="role">RESEARCH</div>
         <div class="name">AntimatterAI</div>
@@ -1465,7 +1468,7 @@
       <p>The discovery engine. Large-scale autonomic phenotyping for biopharma drug-response cohorts.</p>
     </article>
     <article class="eco-card">
-      <svg class="mark" viewBox="0 0 36 36"><rect x="6" y="6" width="24" height="24" rx="4" fill="none" stroke="#00bcd4" stroke-width="1.4"/><path d="M12 18h12M18 12v12" stroke="#00bcd4" stroke-width="1.4"/></svg>
+      <svg class="mark" viewBox="0 0 36 36"><rect x="6" y="6" width="24" height="24" rx="4" fill="none" stroke="#00B07E" stroke-width="1.4"/><path d="M12 18h12M18 12v12" stroke="#00B07E" stroke-width="1.4"/></svg>
       <div>
         <div class="role">CLINIC OS</div>
         <div class="name">ClinixAI</div>
@@ -1473,7 +1476,7 @@
       <p>The clinic-room operating layer. EHR-light. ANS-native. Built for autonomic specialists.</p>
     </article>
     <article class="eco-card">
-      <svg class="mark" viewBox="0 0 36 36"><path d="M6 28 L18 6 L30 28 Z" fill="none" stroke="#ff6b35" stroke-width="1.4"/><circle cx="18" cy="22" r="2.5" fill="#ff6b35"/></svg>
+      <svg class="mark" viewBox="0 0 36 36"><path d="M6 28 L18 6 L30 28 Z" fill="none" stroke="#4A9EFF" stroke-width="1.4"/><circle cx="18" cy="22" r="2.5" fill="#4A9EFF"/></svg>
       <div>
         <div class="role">BIO</div>
         <div class="name">RRG Bio</div>
@@ -1611,7 +1614,7 @@
 <!-- ====================== 18. FINAL CTA ====================== -->
 <section id="cta" aria-labelledby="cta-title" style="border-top: 0;">
   <div class="final-cta">
-    <span class="ps-pill ps-pill-processing" style="margin-bottom: var(--space-5);"><span class="dot"></span>HUMANOS · v2.0.0</span>
+    <span class="ps-pill ps-pill-processing" style="margin-bottom: var(--space-5);"><span class="dot"></span>HUMANOS · v2.3.0</span>
     <h2 id="cta-title">The future of medicine is <span class="accent">autonomic.</span></h2>
     <p>
       Run a real .ans report on your own nervous system in eight seconds. Or book a fifteen-minute demo
@@ -1631,7 +1634,7 @@
 
   <div class="footer-mini">
     <div class="row">
-      <span class="mono">PhysioPS × HumanOS · v2.0.0</span>
+      <span class="mono">PhysioPS × HumanOS · v2.3.0</span>
       <span class="mono">Nirmata Holdings · 2026</span>
       <span class="mono">510(k) · K-pending</span>
     </div>

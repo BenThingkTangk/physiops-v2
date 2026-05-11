@@ -36,22 +36,22 @@
   if (now) {
     const ts = new Date();
     const pad = (n) => String(n).padStart(2, '0');
-    const s = `${ts.getUTCFullYear()}-${pad(ts.getUTCMonth() + 1)}-${pad(ts.getUTCDate())} · ${pad(ts.getUTCHours())}:${pad(ts.getUTCMinutes())} UTC · v2.0.0`;
+    const s = `${ts.getUTCFullYear()}-${pad(ts.getUTCMonth() + 1)}-${pad(ts.getUTCDate())} · ${pad(ts.getUTCHours())}:${pad(ts.getUTCMinutes())} UTC · v2.3.0`;
     now.textContent = s;
   }
 
   /* ---------- Color swatches ---------- */
   const COLOR_GROUPS = {
     bg: [
-      ['--color-bg-void', '#03060a', 'Cinematic hero depths'],
-      ['--color-bg-deep', '#060a10', 'Primary app background'],
-      ['--color-bg-base', '#080d14', 'Default body'],
-      ['--color-bg-orbit', '#0a111d', 'Section backgrounds'],
-      ['--color-surface-0', '#0c1220', 'Base cards'],
-      ['--color-surface-1', '#0f172a', 'Raised cards'],
-      ['--color-surface-2', '#131c32', 'Modals · drawers'],
-      ['--color-surface-3', '#1a2540', 'Active overlays'],
-      ['--color-surface-ink', '#02040a', 'Data-heavy panels'],
+      ['--color-bg-void', '#030B14', 'Cinematic hero depths'],
+      ['--color-bg-deep', '#061224', 'Primary app background'],
+      ['--color-bg-base', '#081428', 'Default body'],
+      ['--color-bg-orbit', '#0A1A2E', 'Section backgrounds'],
+      ['--color-surface-0', '#0C1F36', 'Base cards'],
+      ['--color-surface-1', '#10243E', 'Raised cards'],
+      ['--color-surface-2', '#152C48', 'Modals · drawers'],
+      ['--color-surface-3', '#1B3556', 'Active overlays'],
+      ['--color-surface-ink', '#020A14', 'Data-heavy panels'],
     ],
     text: [
       ['--color-text-primary', '#f0f4ff', 'Primary'],
@@ -60,27 +60,27 @@
       ['--color-text-faint', '#3d4658', 'Decorative labels'],
     ],
     brand: [
-      ['--color-brand-cyan', '#00e5ff', 'Primary action'],
-      ['--color-brand-teal', '#00bcd4', 'Links · secondary action'],
-      ['--color-brand-blue', '#2f7cff', 'AI active intelligence'],
-      ['--color-brand-violet', '#a78bfa', 'HRV composite'],
+      ['--color-brand-cyan', '#00E5A0', 'Primary action'],
+      ['--color-brand-teal', '#00B07E', 'Links · secondary action'],
+      ['--color-brand-blue', '#4A9EFF', 'AI active intelligence'],
+      ['--color-brand-violet', '#A855F7', 'HRV composite'],
       ['--color-brand-white', '#f7fbff', 'Premium highlights'],
       ['--color-brand-platinum', '#dbe7f8', 'Report highlights'],
     ],
     clinical: [
-      ['--color-parasym', '#00e5ff', 'Parasympathetic · RFa'],
-      ['--color-parasym-soft', '#6eeeff', 'Parasym highlight'],
-      ['--color-sympathetic', '#ff6b35', 'Sympathetic · LFa'],
-      ['--color-sympathetic-soft', '#ff9a72', 'Sympathetic highlight'],
-      ['--color-hrv', '#a78bfa', 'HRV composite'],
+      ['--color-parasym', '#00E5A0', 'Parasympathetic · RFa'],
+      ['--color-parasym-soft', '#5FF0C5', 'Parasym highlight'],
+      ['--color-sympathetic', '#4A9EFF', 'Sympathetic · LFa'],
+      ['--color-sympathetic-soft', '#7FBBFF', 'Sympathetic highlight'],
+      ['--color-hrv', '#A855F7', 'HRV composite'],
       ['--color-baseline', '#64748b', 'Resting baseline'],
     ],
     status: [
       ['--color-status-optimal', '#22c55e', 'Optimal function'],
       ['--color-status-watch', '#f59e0b', 'Watch · monitor'],
-      ['--color-status-risk', '#ff6b35', 'Elevated concern'],
+      ['--color-status-risk', '#4A9EFF', 'Elevated concern'],
       ['--color-status-critical', '#ef4444', 'Severe · clinical alert'],
-      ['--color-status-processing', '#00e5ff', 'AI analysis active'],
+      ['--color-status-processing', '#00E5A0', 'AI analysis active'],
       ['--color-status-cleared', '#10b981', 'Cleared · verified'],
       ['--color-status-unknown', '#64748b', 'Insufficient data'],
     ],
@@ -195,8 +195,8 @@
 
       // background subtle
       const g = ctx.createLinearGradient(0, 0, 0, h);
-      g.addColorStop(0, 'rgba(0,229,255,0.03)');
-      g.addColorStop(1, 'rgba(255,107,53,0.025)');
+      g.addColorStop(0, 'rgba(0,229,160,0.03)');
+      g.addColorStop(1, 'rgba(74,158,255,0.025)');
       ctx.fillStyle = g;
       ctx.fillRect(0, 0, w, h);
 
@@ -226,14 +226,14 @@
       ctx.lineTo(0, h);
       ctx.closePath();
       const pf = ctx.createLinearGradient(0, midY - ampY, 0, h);
-      pf.addColorStop(0, 'rgba(0,229,255,0.18)');
-      pf.addColorStop(1, 'rgba(0,229,255,0)');
+      pf.addColorStop(0, 'rgba(0,229,160,0.18)');
+      pf.addColorStop(1, 'rgba(0,229,160,0)');
       ctx.fillStyle = pf;
       ctx.fill();
 
-      ctx.strokeStyle = '#00e5ff';
+      ctx.strokeStyle = '#00E5A0';
       ctx.lineWidth = 2 * dpr;
-      ctx.shadowColor = 'rgba(0,229,255,0.55)';
+      ctx.shadowColor = 'rgba(0,229,160,0.55)';
       ctx.shadowBlur = 10 * dpr;
       ctx.beginPath();
       for (let i = 0; i < len; i++) {
@@ -244,8 +244,8 @@
       ctx.stroke();
 
       // SYMPATHETIC — ember (no fill, lighter glow)
-      ctx.strokeStyle = '#ff6b35';
-      ctx.shadowColor = 'rgba(255,107,53,0.45)';
+      ctx.strokeStyle = '#4A9EFF';
+      ctx.shadowColor = 'rgba(74,158,255,0.45)';
       ctx.shadowBlur = 8 * dpr;
       ctx.beginPath();
       for (let i = 0; i < len; i++) {
@@ -256,9 +256,9 @@
       ctx.stroke();
 
       // HRV composite — violet
-      ctx.strokeStyle = 'rgba(167,139,250,0.85)';
+      ctx.strokeStyle = 'rgba(168,85,247,0.85)';
       ctx.lineWidth = 1.4 * dpr;
-      ctx.shadowColor = 'rgba(167,139,250,0.35)';
+      ctx.shadowColor = 'rgba(168,85,247,0.35)';
       ctx.shadowBlur = 6 * dpr;
       ctx.setLineDash([2 * dpr, 4 * dpr]);
       ctx.beginPath();
@@ -277,12 +277,12 @@
         const bx = (0.18 + drift * 0.5) * w;
         const bw = 0.16 * w;
         const bg2 = ctx.createLinearGradient(bx, 0, bx + bw, 0);
-        bg2.addColorStop(0, 'rgba(0,229,255,0)');
-        bg2.addColorStop(0.5, 'rgba(0,229,255,0.06)');
-        bg2.addColorStop(1, 'rgba(0,229,255,0)');
+        bg2.addColorStop(0, 'rgba(0,229,160,0)');
+        bg2.addColorStop(0.5, 'rgba(0,229,160,0.06)');
+        bg2.addColorStop(1, 'rgba(0,229,160,0)');
         ctx.fillStyle = bg2;
         ctx.fillRect(bx, 0, bw, h);
-        ctx.strokeStyle = 'rgba(0,229,255,0.25)';
+        ctx.strokeStyle = 'rgba(0,229,160,0.25)';
         ctx.lineWidth = 1 * dpr;
         ctx.strokeRect(bx, 0, bw, h);
       }
@@ -291,8 +291,8 @@
       const lastP = state.buf[len - 1].p;
       const cx = w - 1;
       const cy = midY - lastP * ampY;
-      ctx.fillStyle = '#00e5ff';
-      ctx.shadowColor = 'rgba(0,229,255,0.8)';
+      ctx.fillStyle = '#00E5A0';
+      ctx.shadowColor = 'rgba(0,229,160,0.8)';
       ctx.shadowBlur = 12 * dpr;
       ctx.beginPath();
       ctx.arc(cx, cy, 3 * dpr, 0, Math.PI * 2);
